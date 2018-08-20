@@ -1,5 +1,6 @@
-# maylortaylor.github.io
-@MaylorDev github page
+# README for [maylortaylor.github.io](https://maylortaylor.github.io/)
+
+[@MaylorDev](https://twitter.com/maylordev)
 
 Made using [Jekyll.](https://jekyllrb.com/docs/home/) Jekyll is self-aware, so if you add folders and files following specific naming conventions, when you commit to GitHub, Jekyll will magically build your website. In order for Jekyll to work with your site, you need to follow [Jekyll's folder structure.](https://jekyllrb.com/docs/structure/)
 
