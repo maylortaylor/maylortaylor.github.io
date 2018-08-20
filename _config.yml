@@ -1,2 +1,3 @@
 name: Matt "Maylor" Taylor, Full Stack Developer
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
