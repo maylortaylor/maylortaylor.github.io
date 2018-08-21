@@ -4,6 +4,12 @@ body {
     width: 70%;
     background-color: #fff;
 }
+@media (max-width: 480px) {
+    nav ul li {
+        display: inline;
+        margin-right: 10%;
+    }
+}
 .container {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -19,7 +25,7 @@ nav ul, footer ul {
 }
 nav ul li {
     display: inline;
-    margin-right: 130px;
+    margin-right: 18%;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -39,6 +45,9 @@ a:hover {
 .header {
     background-color: #004A8F;
     border-radius: 12px;
+}
+.headshot-pic {
+    margin:10px;
 }
 h1 {
     font-size: 3em;
