@@ -17,8 +17,11 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-nav {
+.navigation {
     border-bottom: 1px solid #d5d5d5;
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
 }
 nav ul, footer ul {
     text-align: end;
@@ -31,17 +34,14 @@ nav ul li {
     margin-right: 18%;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
     font-size: .8em;
     display: inline;
 }
 .foot {
+    border-top: 1px solid #d5d5d5;
     display: flex;
     justify-content:space-around;
     list-style-type:none;
-}
-footer ul li {
-    margin-right: 15%;
 }
 a {
     text-decoration: none;
