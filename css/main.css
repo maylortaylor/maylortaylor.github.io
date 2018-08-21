@@ -7,10 +7,9 @@ body {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width: 360px) {
     nav ul li {
-        margin-right: 7% !important;
+        margin-right: 8% !important;
     }
     footer ul li {
-        display: inline;
         margin-right: 7% !important;
     }
 }
@@ -34,10 +33,15 @@ nav ul li {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    display: inline;
+}
+.foot {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
 }
 footer ul li {
-    display: inline;
-    margin-right: 18%;
+    margin-right: 15%;
 }
 a {
     text-decoration: none;
