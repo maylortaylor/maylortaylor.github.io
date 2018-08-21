@@ -17,15 +17,13 @@ nav ul li {
     display: inline;
     margin-right: 130px;
 }
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
 footer ul li {
     display: inline;
     margin-right: 100px;
-}
-h2 {
-    background-color: #454E9E;
-    color: #fff;
-    padding: 10px;
-    border-radius: 12px;
 }
 a {
     text-decoration: none;
@@ -36,17 +34,22 @@ a:hover {
 }
 h1 {
     font-size: 3em;
+    background-color: #004A8F;
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+}
+h2 {
+    background-color: #454E9E;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
