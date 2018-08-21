@@ -36,11 +36,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.header {
+    background-color: #004A8F;
+    border-radius: 12px;
+}
 h1 {
     font-size: 3em;
-    background-color: #004A8F;
     color: #fff;
-    border-radius: 12px;
     padding: 10px;
 }
 h2 {
