@@ -2,6 +2,7 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 40px auto;
     width: 70%;
+    background-color: #fff;
 }
 nav {
     border-bottom: 1px solid #d5d5d5;
@@ -19,6 +20,11 @@ nav ul li {
 footer ul li {
     display: inline;
     margin-right: 100px;
+}
+h2 {
+    background-color: #454E9E;
+    color: #fff;
+    padding: 10px;
 }
 a {
     text-decoration: none;
