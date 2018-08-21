@@ -4,6 +4,10 @@ body {
     width: 70%;
     background-color: #fff;
 }
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 nav {
     border-bottom: 1px solid #d5d5d5;
 }
