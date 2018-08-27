@@ -102,3 +102,11 @@ In the preceding example, if you use a statement like the following example:
 you will get the compiler error message:
 
     A readonly field cannot be assigned to (except in a constructor or a variable initializer) 
+
+
+___
+## References
+ - [Const from Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/const)
+ - [Readonly from Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly)
+ - [Stackoverflow Answer](https://stackoverflow.com/questions/55984/what-is-the-difference-between-const-and-readonly)
+ - [CSharp Corner Top C# Interview Questions](https://www.c-sharpcorner.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/)
