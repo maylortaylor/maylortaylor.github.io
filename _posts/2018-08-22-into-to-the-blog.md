@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Const Vs. Readonly"
-date: 2018-08-27
+title: "Intro To The Blog"
+date: 2018-08-22
 ---
 # Intro to the blog
 
