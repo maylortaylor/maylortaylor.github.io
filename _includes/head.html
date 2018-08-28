@@ -1,20 +1,25 @@
+{% if site.tags != "" %}
+{% include collecttags.html %}
+{% endif %}
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="{{ page.description }}">
-	<meta name="author" content="Matthew Taylor">
-	<link rel="shortcut icon" href="../media/face.png">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<title>{{ page.title }} | Matt Taylor | Full Stack Web Developer, Musician, Producer, Gamer, Web Noodler.</title>
-    <!-- styles -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="author" content="{{ site.author }}">
+	<title>{{ site.title }}{% if page.title %} | {{ page.title }} {% endif %}</title>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-  <script src="../../assets/js/html5shiv.js"></script>
-  <script src="../../assets/js/respond.min.js"></script>
-	<![endif]-->
-	<!-- google analytics - i will not share this data with google -->
+	<link rel="shortcut icon" href="../assets/media/face.png">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+	<script src="{{ '/assets/js/bootstrap/js/bootstrap.min.js' | relative_url }}"></script>
+	<!-- <script defer src="{{ '/assets/js/fontawesome/all.min.js' | relative_url }}"></script> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- styles -->
+	<!-- <link rel="stylesheet" href="{{ '/assets/css/fontawesome/all.min.css' | relative_url }}"> -->
+	<link rel="stylesheet" href="{{ '/assets/css/bootstrap/css/bootstrap.min.css' | relative_url }}">
+	<link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}">
+
 	{% include analytics.html %}
 </head>

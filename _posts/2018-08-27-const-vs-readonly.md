@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Const Vs. Readonly"
+description: "What is the difference between constant and readonly in C#?"
 date: 2018-08-27
+tags: c-sharp
+share: true
 ---
 # What is the difference between constant and read only in c#?
 
