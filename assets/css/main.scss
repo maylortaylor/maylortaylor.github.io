@@ -146,5 +146,18 @@ ul.posts li {
 	text-align: center;
 }
 .tags {
-	list-style: none;
+	padding: 10px 0px 10px 0px;
+	i {
+		font-size: 3em;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+.social-area {
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	i {
+		font-size: 3em;
+	}
 }
