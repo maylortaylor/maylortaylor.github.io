@@ -2,20 +2,22 @@
 ---
 
 // ******************************************************** // Variables // ******************************************************** // Several accent colors, choose one or create your own!
-$accent-color: #3ca2a2; // original =) // $accent-color: #C38FD6;  // velvet // $accent-color: #8FD6B3;  // greenish // $accent-color: #35B4DE;  // bluish // $accent-color: #D2E354;  // yellowish // $accent-color: #52B54B;  // green
 $font-color: #dddddd;
-$block-quote: #bbb;
+$block-quote: #bbbbbb;
+$accent-color: #3ca2a2;
+$accent2-color: #ee6c4d;
 $header-color: #004a8f;
 $header2-color: #454e9e;
+$share-buttons-color: #104547;
 $background-color: #292929;
 $post-panel-color: #39393a;
 $pre-code-color: #007bff;
 $footer-background-color: #292c2f;
-$note-color: #87cefa;
 $warning-color: #ffff00; // use this or pick any from /css/pics/background folder or from transparenttextures.com
 $background-pattern: 'axiom-pattern.png';
 @import 'timeline'; // Import partials from _sass
 @import 'cv';
+@import 'share';
 @mixin font-size($size) {
 	font-size: $size;
 	font-size: calculateRem($size);
@@ -40,9 +42,6 @@ a {
 blockquote {
 	color: $block-quote;
 	font-size: 1em;
-}
-pre code {
-	color: $pre-code-color !important;
 } /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width: 360px) {
 	footer ul li {
@@ -121,6 +120,7 @@ h2 {
 	padding: 10px;
 	border-radius: 12px;
 	font-size: 2em;
+	text-align: center;
 }
 p {
 	font-size: 1.5em;
@@ -135,75 +135,6 @@ ul.posts li {
 }
 .cv-area {
 	margin-bottom: 50px;
-} // ******************************************************** // Share // ********************************************************
-.share-bar {
-	text-align: right;
-}
-ul.share-buttons {
-	list-style: none;
-	padding: 0;
-	li {
-		display: inline-block;
-		.fa-facebook-f,
-		.fa-twitter,
-		.fa-google-plus-g,
-		.fa-linkedin-in,
-		.fa-envelope,
-		.fa-pinterest-p {
-			color: #ffffff;
-		}
-		a {
-			text-decoration: none;
-		}
-		-webkit-transition: -webkit-transform 0.4s;
-		-moz-transition: -moz-transform 0.4s;
-		-ms-transition: -ms-transform 0.4s;
-		-o-transition: -o-transform 0.4s;
-		transition: transform 0.4s;
-	} // Square frame
-	li.share-facebook .fa-square {
-		color: #3b5998;
-	}
-	li.share-twitter .fa-square {
-		color: #55acee;
-	}
-	li.share-google-plus .fa-square {
-		color: #dd4b39;
-	}
-	li.share-linkedin .fa-square {
-		color: #4875b4;
-	}
-	li.share-pinterest .fa-square {
-		color: #bd081c;
-	}
-	li.share-envelope .fa-square {
-		color: #3b5998;
-	} // Circle frame
-	li.share-facebook .fa-circle {
-		color: #3b5998;
-	}
-	li.share-twitter .fa-circle {
-		color: #55acee;
-	}
-	li.share-google-plus .fa-circle {
-		color: #dd4b39;
-	}
-	li.share-linkedin .fa-circle {
-		color: #4875b4;
-	}
-	li.share-pinterest .fa-circle {
-		color: #bd081c;
-	}
-	li.share-envelope .fa-circle {
-		color: #3b5998;
-	}
-	li:hover {
-		-webkit-transform: scale(1.3, 1.3);
-		-moz-transform: scale(1.3, 1.3);
-		-ms-transform: scale(1.3, 1.3);
-		-o-transform: scale(1.3, 1.3);
-		transform: scale(1.3, 1.3);
-	}
 }
 @media screen and (max-width: 600px) {
 	.g-maps {
@@ -213,4 +144,7 @@ ul.share-buttons {
 }
 .g-maps {
 	text-align: center;
+}
+.tags {
+	list-style: none;
 }

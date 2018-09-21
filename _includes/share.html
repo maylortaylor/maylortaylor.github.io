@@ -3,34 +3,38 @@
 <div class="share-bar">
   <ul class="share-buttons">
     {% if site.share.facebook %}
-      <li class="share-facebook">
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url}}"
-             target="_blank" title="Share on Facebook">
-            <span class="fa-layers fa-fw fa-2x">
-                <i class="far fa-square"></i>
-                <i class="fab fa-facebook-f" data-fa-transform="shrink-8"></i>
-            </span>
-          </a>
-      </li>
-    {% endif %}
-
-    {% if site.share.twitter %}
-    <li class="share-twitter">
-      <a href="https://twitter.com/intent/tweet?url={{ site.url | append: page.url }}&text={{page.title}}" target="_blank" title="Tweet">
+    <li class="share-facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url}}" target="_blank" title="Share on Facebook">
         <span class="fa-layers fa-fw fa-2x">
-            <i class="far fa-circle"></i>
-            <i class="fab fa-twitter" data-fa-transform="shrink-8"></i>
+          <i class="fab fa-facebook-square"></i>
         </span>
       </a>
     </li>
     {% endif %}
 
+    {% if site.share.twitter %}
+    <li class="share-twitter">
+      <a href="https://twitter.com/intent/tweet?url={{ site.url | append: page.url }}&text={{page.title}}" target="_blank"
+        title="Tweet">
+        <span class="fa-layers fa-fw fa-2x">
+          <i class="fab fa-twitter-square"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %}
+
+    <li class="">
+      <span class="fa-layers fa-fw fa-2x">
+        share
+      </span>
+    </li>
+
     {% if site.share.linkedin %}
     <li class="share-linkedin">
-      <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: page.url }}&title={{page.title}}&summary={{page.description}}&source=" target="_blank" title="Share on LinkedIn">
+      <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: page.url }}&title={{page.title}}&summary={{page.description}}&source="
+        target="_blank" title="Share on LinkedIn">
         <span class="fa-layers fa-fw fa-2x">
-            <i class="far fa-circle"></i>
-            <i class="fab fa-linkedin-in" data-fa-transform="shrink-8"></i>
+          <i class="fab fa-linkedin"></i>
         </span>
       </a>
     </li>
@@ -38,10 +42,10 @@
 
     {% if site.share.email %}
     <li class="share-envelope">
-      <a href="mailto:?&subject={{page.title}}&body={{page.description | append: ' ' | append: site.url | append: page.url}}" target="_blank" title="Email">
+      <a href="mailto:?&subject={{page.title}}&body={{page.description | append: ' ' | append: site.url | append: page.url}}"
+        target="_blank" title="Email">
         <span class="fa-layers fa-fw fa-2x">
-            <i class="far fa-circle"></i>
-            <i class="far fa-envelope" data-fa-transform="shrink-8"></i>
+          <i class="fas fa-envelope-square"></i>
         </span>
       </a>
     </li>

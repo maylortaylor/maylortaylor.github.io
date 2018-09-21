@@ -11,18 +11,27 @@ I will give thanks to [Jonathon McGlone](http://jmcglone.com/guides/github-pages
 # Steps to run Locally
 
 1.   Navigate to root directory
-2.   To install all gems, run this command:
+
+           /maylortaylor.github.io
+
+2)   To install all gems, run this command:
 
          bundle install
 
-3.   To run locally, run this command:
+3)   To run locally, run this command:
 
          bundle exec jekyll serve
 
-4.   (optional) To update gems, run this command:
-       
-      bundle update
+4)   (optional) To update gems, run this command:
+
+         bundle update
 
 # Helpful
 
+To build the code, run:
+
         jekyll build
+
+[Font Awesome v5.3](https://fontawesome.com/icons?d=gallery&q=achi&m=free) was used for icons. Click the link to find more font icons.
+
+[Code Prettify](https://github.com/google/code-prettify) was used to for all `pre` and `code` tag styling.
