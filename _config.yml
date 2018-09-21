@@ -10,7 +10,7 @@ url: http://maylortaylor.github.io
 encoding: UTF-8
 
 sass:
-     sass_dir: _sass
+     sass_dir: assets/_sass
      style: compressed
 
 markdown: kramdown
