@@ -10,13 +10,19 @@ I will give thanks to [Jonathon McGlone](http://jmcglone.com/guides/github-pages
 
 # Steps to run Locally
 
-1. Navigate to root directory
-2. To install all gems, run this command:
+1.   Navigate to root directory
+2.   To install all gems, run this command:
 
-        bundle install
-3. To run locally, run this command:
+         bundle install
 
-        bundle exec jekyll serve
-4. (optional) To update gems, run this command:
-        
-        bundle update
+3.   To run locally, run this command:
+
+         bundle exec jekyll serve
+
+4.   (optional) To update gems, run this command:
+       
+      bundle update
+
+# Helpful
+
+        jekyll build
