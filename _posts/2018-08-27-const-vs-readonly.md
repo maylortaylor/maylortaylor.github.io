@@ -1,15 +1,17 @@
 ---
 layout: post
-title: "Const Vs. Readonly"
-description: "What is the difference between constant and readonly in C#?"
+title: 'Const Vs. Readonly'
+description: 'What is the difference between constant and readonly in C#?'
 date: 2018-08-27
 tags: c-sharp
 share: true
 ---
-# What is the difference between constant and read only in c#?
+
+# {{ page.description }}
 
 ## Constant (const)
-**Constant** can be used with the `const` keyword in C# which is also known immutable values which are known at compile time and do not change their values at run time. 
+
+**Constant** can be used with the `const` keyword in C# which is also known immutable values which are known at compile time and do not change their values at run time.
 
 Const's are implicitly `static`. You use a `ClassName.ConstantName` notation to access them. Constant fields and locals aren't variables and may not be modified. Constants can be numbers, Boolean values, strings, or a null reference.
 
@@ -17,7 +19,7 @@ Const's are implicitly `static`. You use a `ClassName.ConstantName` notation to 
 
 The `static` modifier is not allowed in a constant declaration.
 
-    public class ConstTest 
+    public class ConstTest
     {
         class SampleClass
         {
@@ -26,9 +28,9 @@ The `static` modifier is not allowed in a constant declaration.
             public const int c1 = 5;
             public const int c2 = c1 + 5;
 
-            public SampleClass(int p1, int p2) 
+            public SampleClass(int p1, int p2)
             {
-                x = p1; 
+                x = p1;
                 y = p2;
             }
         }
@@ -37,7 +39,7 @@ The `static` modifier is not allowed in a constant declaration.
         {
             SampleClass mC = new SampleClass(11, 22);
             Console.WriteLine("x = {0}, y = {1}", mC.x, mC.y);
-            Console.WriteLine("c1 = {0}, c2 = {1}", 
+            Console.WriteLine("c1 = {0}, c2 = {1}",
                             SampleClass.c1, SampleClass.c2);
         }
     }
@@ -45,24 +47,27 @@ The `static` modifier is not allowed in a constant declaration.
         x = 11, y = 22
         c1 = 5, c2 = 10
     */
-___
+
+---
 
 ## Readonly (readonly)
-**Readonly** can be used by the `readonly` keyword in C# which is also known immutable values and are known at compile and run time. 
 
-`readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. 
+**Readonly** can be used by the `readonly` keyword in C# which is also known immutable values and are known at compile and run time.
+
+`readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class.
 
 You can assign a value to a readonly field only in the following contexts:
 
 When the variable is initialized in the declaration, for example:
- -  When the variable is initialized in the declaration, for example:
 
-        public readonly int y = 5;
- - In an instance constructor of the class that contains the instance field declaration.
- - In the static constructor of the class that contains the static field declaration.
+-    When the variable is initialized in the declaration, for example:
+
+         public readonly int y = 5;
+
+-    In an instance constructor of the class that contains the instance field declaration.
+-    In the static constructor of the class that contains the static field declaration.
 
 
- 
         class SampleClass
         {
             public int x;
@@ -104,12 +109,13 @@ In the preceding example, if you use a statement like the following example:
 
 you will get the compiler error message:
 
-    A readonly field cannot be assigned to (except in a constructor or a variable initializer) 
+    A readonly field cannot be assigned to (except in a constructor or a variable initializer)
 
+---
 
-___
 ## References
- - [Const from Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/const)
- - [Readonly from Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly)
- - [Stackoverflow Answer](https://stackoverflow.com/questions/55984/what-is-the-difference-between-const-and-readonly)
- - [CSharp Corner Top C# Interview Questions](https://www.c-sharpcorner.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/)
+
+-    [Const from Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/const)
+-    [Readonly from Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly)
+-    [Stackoverflow Answer](https://stackoverflow.com/questions/55984/what-is-the-difference-between-const-and-readonly)
+-    [CSharp Corner Top C# Interview Questions](https://www.c-sharpcorner.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/)
