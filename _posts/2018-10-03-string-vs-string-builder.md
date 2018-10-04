@@ -34,7 +34,7 @@ The `String` class is in the `System` namespace. A `string` instance is immutabl
 
 A string is a sequential collection of characters that is used to represent text. A String object is a sequential collection of System.Char objects that represent a string; a System.Char object corresponds to a UTF-16 code unit. The value of the String object is the content of the sequential collection of System.Char objects, and that value is immutable (that is, it is read-only). For more information about the immutability of strings, see the [Immutability and the StringBuilder class](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-2.1#Immutability). The maximum size of a String object in memory is 2GB, or about 1 billion characters.
 
-Consider using the String class under these conditions:
+Consider using the `String` class under these conditions:
 
 -    When the number of changes that your app will make to a string is small. In these cases, StringBuilder might offer negligible or no performance improvement over String.
 
