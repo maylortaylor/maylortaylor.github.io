@@ -37,9 +37,8 @@ The following six [accessibility levels](https://docs.microsoft.com/en-us/dotnet
 
      -    Access is limited to the current assembly or types derived from the containing class. `Protected Internal` is a combination of protected and internal both. A protected internal will be accessible within the assembly due to its internal flavor and also via inheritance due to its protected
 
-
-    -    `private protected`
-            - Access is limited to the containing class or types derived from the containing class within the current assembly.
+*    `private protected`
+     -    Access is limited to the containing class or types derived from the containing class within the current assembly.
 
 ### For a video demonstration of these. Please check out this [10 minute video](https://youtu.be/MWxU9OpQlvE)
 
