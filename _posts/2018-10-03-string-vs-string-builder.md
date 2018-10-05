@@ -2,7 +2,7 @@
 layout: post
 title: 'String Vs. String Builder'
 description: 'What is the difference between string and string builder in C#'
-date: 2018-10-04
+date: 2018-10-03
 tags: c-sharp
 share: true
 ---
