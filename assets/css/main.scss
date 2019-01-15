@@ -36,8 +36,31 @@ $background-pattern: 'axiom-pattern.png';
 
 
 body {
-	color: $dark-font-color;
+	color: $light-font-color !important;
 	font-family: Montserrat !important;
+}
+.background-image {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: block;
+    background-image: url('/assets/css/pics/face.jpg') !important;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+.mdl-layout__content {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 9999;
 }
 
 a {
@@ -78,16 +101,20 @@ a span, a:hover  {
 }
 
 // * Footer
-nav ul,
-footer ul {
-	text-align: end;
-	padding: 0px;
-	list-style: none;
-	font-weight: bold;
-}
+
 footer {
-	font-size: 0.8em;
+	@include font-size(0.8);
 	display: inline;
+	padding: 10px;
+	font-weight: bold;
+	background:transparent !important;
+	a {
+		color: $light-font-color;
+	}
+	a:hover {
+		color: $light-font-color;
+		text-decoration: underline;
+	}
 }
 .foot {
 	border-top: 1px solid $dark-font-color;
@@ -100,24 +127,20 @@ footer {
 // * ---------------------------------------
 // * Headings
 h1 {
-	@include font-size(3);
-	color: #fff;
-	padding: 10px;
+	@include font-size(5);
 }
 h2 {
-	background-color: $header2-color;
-	color: #fff;
-	padding: 10px;
-	border-radius: 12px;
-	@include font-size(2);
-	text-align: center;
+	@include font-size(3);
 }
 blockquote {
 	color: $block-quote;
-	font-size: 1em;
+	@include font-size(1);
 } 
 
 // * Other
+.mdl-layout-title {
+	font-family: Montserrat !important;
+}
 .page-content {
 	padding: 10px;
 }
@@ -189,7 +212,7 @@ ul.posts li {
 	}
 }
 @media screen and (max-width: 600px) {
-	.header-name {
+	.heading-large {
 		padding-bottom: 20px;
 	}
 }
