@@ -1,8 +1,12 @@
 ---
 ---
 
-// ******************************************************** // Variables // ******************************************************** // Several accent colors, choose one or create your own!
-$font-color: #dddddd;
+// ******************************************************** 
+// * Variables 
+// ******************************************************** // 
+// * Several accent colors, choose one or create your own!
+$dark-font-color: #848383;
+$light-font-color: #dddddd;
 $block-quote: #bbbbbb;
 $accent-color: #3ca2a2;
 $accent2-color: #ee6c4d;
@@ -18,57 +22,62 @@ $background-pattern: 'axiom-pattern.png';
 @import 'timeline'; // Import partials from _sass
 @import 'cv';
 @import 'share';
-@mixin font-size($size) {
-	font-size: $size;
-	font-size: calculateRem($size);
+@import 'mixins';
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-@mixin transition($args...) {
-	-webkit-transition: $args;
-	-moz-transition: $args;
-	-ms-transition: $args;
-	-o-transition: $args;
-	transition: $args;
-}
+// * Main / Important
+// * ---------------------------------------
+
+
 body {
-	font-family: 'Raleway', sans-serif;
-	margin: 40px auto;
-	width: 90%;
-	color: $font-color;
-	background: $background-color url(pics/backgrounds/#{$background-pattern});
+	color: $dark-font-color;
+	font-family: Montserrat !important;
 }
+
 a {
+	text-decoration: none;
 	color: $accent-color;
 }
-blockquote {
-	color: $block-quote;
-	font-size: 1em;
-} /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width: 360px) {
-	footer ul li {
-		margin-right: 3% !important;
-		margin-left: 3% !important;
-	}
+
+a:hover {
+	text-decoration: underline;
 }
-.rounded-circle {
-	border-width: 10px;
-	border-style: groove;
-	border-radius: 50% !important;
-	border-color: $header2-color;
+
+p {
+	@include font-size(1.5);
+	line-height: 1.4em;
 }
-.text-container {
-	padding: 10px;
+
+a span, a:hover  {
+	color: $light-font-color;
 }
-.navigation {
-	border-bottom: 1px solid $font-color;
-	display: flex;
-	justify-content: space-around;
-	list-style-type: none;
+
+
+
+// * Structures
+// * ---------------------------------------
+// * Navbar
+.maylor-layout .mdl-layout__header,
+.maylor-layout .mdl-layout__drawer-button {
+  color: $dark-font-color;
 }
-@media screen and (max-width: 600px) {
-	.header-name {
-		padding-bottom: 20px;
-	}
+// * Header
+.header {
+	background-color: $header-color;
+	border-radius: 12px;
+	text-align: center;
 }
+.headshot-pic {
+	margin: 10px;
+}
+
+// * Footer
 nav ul,
 footer ul {
 	text-align: end;
@@ -81,37 +90,17 @@ footer {
 	display: inline;
 }
 .foot {
-	border-top: 1px solid $font-color;
+	border-top: 1px solid $dark-font-color;
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
 }
 
-a {
-	text-decoration: none;
-	color: $accent-color;
-}
-a:hover {
-	text-decoration: underline;
-}
-@media screen and (max-width: 600px) {
-	.header {
-		font-size: 1em !important;
-	}
-	.rounded-circle {
-		float: none !important;
-	}
-}
-.header {
-	background-color: $header-color;
-	border-radius: 12px;
-	text-align: center;
-}
-.headshot-pic {
-	margin: 10px;
-}
+// * Components
+// * ---------------------------------------
+// * Headings
 h1 {
-	font-size: 3em;
+	@include font-size(3);
 	color: #fff;
 	padding: 10px;
 }
@@ -120,49 +109,101 @@ h2 {
 	color: #fff;
 	padding: 10px;
 	border-radius: 12px;
-	font-size: 2em;
+	@include font-size(2);
 	text-align: center;
 }
-p {
-	font-size: 1.5em;
-	line-height: 1.4em;
+blockquote {
+	color: $block-quote;
+	font-size: 1em;
+} 
+
+// * Other
+.page-content {
+	padding: 10px;
 }
+.rounded-circle {
+	border-width: 10px;
+	border-style: groove;
+	border-radius: 50% !important;
+	border-color: $header2-color;
+}
+
+.text-container {
+	padding: 10px;
+}
+
+.navigation {
+	border-bottom: 1px solid $dark-font-color;
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
 ul.posts {
 	margin: 20px auto 40px;
-	font-size: 1.5em;
+	@include font-size(1.5);
 }
+
 ul.posts li {
 	list-style: none;
 }
+
 .cv-area {
 	margin-bottom: 50px;
+}
+
+.g-maps {
+	text-align: center;
+}
+
+.tags {
+	padding: 10px 0px 10px 0px;
+	i {
+		@include font-size(3);
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.social-area {
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	i {
+		@include font-size(3);
+	}
+}
+
+.csm-seal {
+	margin:5px;
+}
+
+
+// * Media
+// * ---------------------------------------
+// * Smartphones (portrait and landscape) -----------
+@media only screen and (max-width: 360px) {
+	footer ul li {
+		margin-right: 3% !important;
+		margin-left: 3% !important;
+	}
+}
+@media screen and (max-width: 600px) {
+	.header-name {
+		padding-bottom: 20px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.header {
+		@include font-size(1);
+	}
+	.rounded-circle {
+		float: none !important;
+	}
 }
 @media screen and (max-width: 600px) {
 	.g-maps {
 		visibility: hidden;
 		display: none;
 	}
-}
-.g-maps {
-	text-align: center;
-}
-.tags {
-	padding: 10px 0px 10px 0px;
-	i {
-		font-size: 3em;
-	}
-	a {
-		text-decoration: none;
-	}
-}
-.social-area {
-	text-align: center;
-	padding: 10px 0px 10px 0px;
-	i {
-		font-size: 3em;
-	}
-}
-
-.csm-seal {
-	margin:5px;
 }
