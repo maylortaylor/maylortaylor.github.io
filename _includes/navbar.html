@@ -1,16 +1,31 @@
-<header class="mdl-layout__header is-casting-shadow">
-    <div role="button" tabindex="0" class="mdl-layout__drawer-button">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="mdl-layout__header-row">
-        <!-- Title -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <header class="mdl-layout__header is-casting-shadow">
+        <div role="button" tabindex="0" class="mdl-layout__drawer-button">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <a href="/">
+                <span class="mdl-layout-title">MaylorTaylor</span>
+            </a>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="/">Home</a>
+                <a class="mdl-navigation__link" href="/about">About</a>
+                <a class="mdl-navigation__link" href="/cv">CV</a>
+                <a class="mdl-navigation__link" href="/blog">Blog</a>
+                <a class="mdl-navigation__link" href="/tags">Tags</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
         <a href="/">
             <span class="mdl-layout-title">MaylorTaylor</span>
         </a>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="/">Home</a>
             <a class="mdl-navigation__link" href="/about">About</a>
             <a class="mdl-navigation__link" href="/cv">CV</a>
@@ -18,16 +33,3 @@
             <a class="mdl-navigation__link" href="/tags">Tags</a>
         </nav>
     </div>
-</header>
-<div class="mdl-layout__drawer">
-    <a href="/">
-        <span class="mdl-layout-title">MaylorTaylor</span>
-    </a>
-    <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="/">Home</a>
-        <a class="mdl-navigation__link" href="/about">About</a>
-        <a class="mdl-navigation__link" href="/cv">CV</a>
-        <a class="mdl-navigation__link" href="/blog">Blog</a>
-        <a class="mdl-navigation__link" href="/tags">Tags</a>
-    </nav>
-</div>

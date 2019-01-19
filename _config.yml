@@ -21,10 +21,17 @@ kramdown:
 exclude: ['README.md', 'LICENSE']
 github: [metadata]
 
+defaults:
+  - scope:
+      path: assets/
+    values:
+      image: true
+
 permalink: /blog/:year/:month/:day/:title
 
 plugins:
      - jekyll-sitemap
+     - jekyll-coffeescript
 
 share:
      facebook: true

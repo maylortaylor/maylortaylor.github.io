@@ -1,0 +1,29 @@
+{
+  "name": "maylortaylor.github.io",
+  "version": "1.0.0",
+  "description": "Jekyll blog site for github.io - @TheMaylorTaylor",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "start": "npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maylortaylor/maylortaylor.github.io.git"
+  },
+  "keywords": [
+    "github",
+    "githubpages",
+    "maylortaylor",
+    "blog",
+    "personal"
+  ],
+  "author": "MaylorTaylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maylortaylor/maylortaylor.github.io/issues"
+  },
+  "homepage": "https://github.com/maylortaylor/maylortaylor.github.io#readme"
+}

@@ -5,6 +5,7 @@
 // * Variables 
 // ******************************************************** // 
 // * Several accent colors, choose one or create your own!
+$dark: #0F0922;
 $dark-font-color: #848383;
 $light-font-color: #dddddd;
 $block-quote: #bbbbbb;
@@ -34,8 +35,11 @@ $background-pattern: 'axiom-pattern.png';
 // * Main / Important
 // * ---------------------------------------
 
-
 body {
+	background: rgb(30,28,149);
+	background: radial-gradient(circle, rgba(30,28,149,1) 40%, rgba(15,18,55,1) 100%);
+}
+body, h1, h2, h3 {
 	color: $light-font-color !important;
 	font-family: Montserrat !important;
 }
@@ -56,13 +60,42 @@ body {
 	-ms-filter: blur(5px);
 	filter: blur(5px);
 }
+.section {
+	position: relative;
+	overflow: hidden;
+	min-height: 110px;
+	margin: 0px;
+	padding: 0px;
+}
+.section-padding {
+	padding-top: 61px;
+	padding-bottom: 81px;
+}
+.section-padding-more {
+	padding-top: 161px;
+	padding-bottom: 181px;
+}
+.medium-divider {
+	padding-top: 161px;
+	padding-bottom: 181px;
+	min-height: 240px;
+	width: 100%;
+}
+// MDL overrides
 .mdl-layout__content {
 	position: fixed;
 	left: 0;
 	right: 0;
 	z-index: 9999;
 }
-
+.mdl-layout__header {
+	// background: transparent !important;
+	background: rgb(0,17,102);
+	background: linear-gradient(0deg, rgba(0,17,102,1) 50%, rgba(15,18,55,1) 100%);
+}
+.mdl-layout-title {
+	font-family: Montserrat !important;
+}
 a {
 	text-decoration: none;
 	color: $accent-color;
@@ -127,10 +160,16 @@ footer {
 // * ---------------------------------------
 // * Headings
 h1 {
-	@include font-size(5);
+	@include font-size(3.5);
 }
 h2 {
-	@include font-size(3);
+	@include font-size(2.4);
+}
+h3 {
+	@include font-size(1.7);
+}
+h4 {
+	@include font-size(1.2);
 }
 blockquote {
 	color: $block-quote;
@@ -138,11 +177,29 @@ blockquote {
 } 
 
 // * Other
-.mdl-layout-title {
-	font-family: Montserrat !important;
+i.fab{
+	font-size: 80px;
+}
+.mdl-mega-footer__link-list li {
+	width: 20%;
+}
+.center-text {
+	text-align: center;
+}
+.center {
+	margin: 0 auto !important;
 }
 .page-content {
-	padding: 10px;
+	margin: 0px;
+}
+.push-down {
+	margin-top: 70px !important;
+}
+.push-down-more {
+	margin-top: 140px !important;
+}
+.no-point li {
+	list-style-type: none;
 }
 .rounded-circle {
 	border-width: 10px;
@@ -151,7 +208,7 @@ blockquote {
 	border-color: $header2-color;
 }
 
-.text-container {
+.post-container {
 	padding: 10px;
 }
 
