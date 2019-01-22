@@ -1,0 +1,24 @@
+---
+layout: default
+title: Tags
+---
+
+<div class="tags mdl-grid mdl-grid--no-spacing">
+	<div class="card-deck mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+		<h1 class="header">Tags</h1>
+
+		<div class="center-text mdl-grid mdl-grid--no-spacing">
+			{% for tag in site.tags %}
+			<a class=" mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" href="{{ '/tag/' | append:tag[0] | relative_url }}">
+				<div class="card text-center">
+					<div class="card-body">
+						<i class="fas fa-tag"></i>
+						<h5 class="card-title">{{ tag[0] }}</h5>
+					</div>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+
+	</div>
+</div>

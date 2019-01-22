@@ -3,99 +3,113 @@ layout: default
 title: Home
 ---
 
+<!-- ***** Section -->
+<div class="mdl-grid mdl-grid--no-spacing">
+	<!-- * COL -->
+	<div data-rellax data-rellax-container data-rellax-speed="2" class="rellax section section-padding mdl-cell mdl-cell--8-col mdl-cell--12-col-phone">
+		<div class="center-text">
+			<h1 class="">
+				<strong>{{ site.data.profile.name }}</strong>
+			</h1>
+		</div>
+	</div>
+
+	<!-- * COL -->
+	<div data-rellax data-rellax-container data-rellax-speed="2" class="rellax center section section-padding mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
+		<div class="center-text">
+			<img data-rellax id="profile-pic" src="../assets/media/matt-headshot-1.png" class="maylor-image csm-seal float-left"
+			 alt="A face picture of Matt Taylor" width="250" height="250">
+		</div>
+	</div>
+</div>
+
+
 
 <!-- ***** Section -->
-<!-- * COL -->
-<div data-rellax-speed="2" class="section section-padding rellax center mdl-cell mdl-cell--5-col mdl-cell--12-col-phone">
-	<div class="center-text">
-		<h1 class="">
-			<strong>Matt "Maylor" Taylor</strong>
-		</h1>
+<div id="about-me" class="mdl-grid mdl-grid--no-spacing">
+
+	<!-- * COL -->
+	<div data-rellax data-rellax-container class="sunset">
+		<div data-rellax-speed="1" class="rellax section section-padding mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+			<div class="center-text">
+				<h2 class="">
+					<strong>{{ site.data.profile.title }} in {{ site.data.profile.location }}</strong>
+				</h2>
+			</div>
+		</div>
 	</div>
-</div>
-
-<!-- * COL -->
-<div data-rellax-speed="2" class="push-down section section-padding-more rellax center mdl-cell mdl-cell--7-col mdl-cell--12-col-phone">
-	<div class="center-text">
-		<a class="" href="" target="_blank">
-			<img src="../assets/media/matt-headshot-1.png" class="csm-seal float-left" alt="A face picture of Matt Taylor" width="250"
-			 height="250">
-		</a>
-	</div>
-</div>
-
-<!-- ***** Section -->
-<!-- * COL -->
-<div data-rellax-speed="-1" class="section section-padding rellax mdl-cell mdl-cell--7-col mdl-cell--12-col-phone center-text center">
-	<p class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-		I have 6+ years of experience in a real world work environment.
-		I helped develop a SaaS start-up company for 4 years. The company grew
-		from 5 employees and 12 clients to 35 employees and 100+ clients.
-
-		<br>
-		<br>
-
-		I am very experienced in the Microsoft .NET environment, the AngularJS and Angular2+ front-end framework,
-		SQL and MySql relational databases, Mongo and CosmosDB non-relational databases, and Node JS server
-		applications.
-		<a href="/about">Read more about my life...</a>
-	</p>
-</div>
-<!-- * COL -->
-<div data-rellax-speed="1" class="push-down center-text section section-padding-more rellax mdl-cell mdl-cell--5-col mdl-cell--12-col-phone center">
-	<h2 class="">
-		<strong>Full Stack Web Developer in the St Petersburg, FL</strong>
-	</h2>
-</div>
-<!-- * COL -->
-<div data-rellax-speed="1" class="section section-padding rellax mdl-cell mdl-cell--12-col mdl-cell--12-col-phone center">
-	<div class="center-text no-point">
-		<h2>My Skills and Achievements</h2>
-		<ul>
-			<li>5+ years with SQL and MySQL databases, C# language, Razor templates, and MVC framework</li>
-			<li>5+ years using .NET 4.6 and 4.7</li>
-			<li>4+ years of AngularJS development, Javascript, Typescript, HTML, CSS/LESS</li>
-			<li>2+ years using CosmosDb and the latest .NET Core and .NET Standard technologies and builds</li>
-			<li>2+ years experience with Node, Express, MEAN stack, and Angular 2+</li>
-			<li>Well versed on proper RESTful standards, HTML5 standards, ADA compliance standards, and C# coding patterns
-				such
-				as the “Visitor Pattern”</li>
-			<li>1 year experience with PHP Laravel</li>
-		</ul>
-	</div>
-</div>
-
-<!-- * DIVIDER -->
-<div class="medium-divider"></div>
-
-<!-- * COL -->
-<div data-rellax-speed="3" class="section section-padding rellax mdl-cell mdl-cell--7-col mdl-cell--12-col-phone center">
-	<div class="center-text">
-		<h2 class="">ScrumMaster Certified</h2>
-		<p class="">
-			I recently decided to better myself and my development practices by getting ScrumMaster
-			Certified <a href="https://www.scrumalliance.org/get-certified/practitioners/csm-certification">(CSM)</a>
-			by <a href="https://www.scrumalliance.org/" target="_blank">ScrumAlliance</a>.
+	<!-- * COL -->
+	<div data-rellax-speed="-1" class="section section-padding-more rellax mdl-cell mdl-cell--6-col mdl-cell--12-col-phone center">
+		<p class="center-text">
+			I have 6+ years of experience in a real world work environment.
+			I helped develop a SaaS start-up company for 4 years. The company grew
+			from 5 employees and 12 clients to 35 employees and 100+ clients.
 		</p>
-		<div class="">
+	</div>
+	<!-- * COL -->
+	<div data-rellax-speed="1" class="bg-color-2 section section-padding-more rellax mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+		<div class="no-point">
+			<h2 class="center-text">My Skills and Achievements</h2>
+			<ul>
+				<li>5+ years with SQL and MySQL databases, C# language, Razor templates, and MVC framework</li>
+				<li>5+ years using .NET 4.6 and 4.7</li>
+				<li>4+ years of AngularJS development, Javascript, Typescript, HTML, CSS/LESS</li>
+				<li>2+ years using CosmosDb and the latest .NET Core and .NET Standard technologies and builds</li>
+				<li>2+ years experience with Node, Express, MEAN stack, and Angular 2+</li>
+				<li>Well versed on proper RESTful standards, HTML5 standards, ADA compliance standards, and C# coding patterns
+					such
+					as the “Visitor Pattern”</li>
+				<li>1 year experience with PHP Laravel</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!-- ***** Section -->
+<div class="mdl-grid mdl-grid--no-spacing">
+	<!-- * COL -->
+	<div data-rellax-speed="-1" class="section section-padding-more rellax mdl-cell mdl-cell--6-col mdl-cell--12-col-phone center">
+		<p class="center-text">
+			I am very experienced in the Microsoft .NET environment, the AngularJS and Angular2+ front-end framework,
+			SQL and MySql relational databases, Mongo and CosmosDB non-relational databases, and Node JS server
+			applications.
+			<a href="/about">Read more about my life...</a>
+		</p>
+	</div>
+	<!-- * COL -->
+	<div data-rellax data-rellax-container data-rellax-speed="3" class="tree section section-padding rellax mdl-cell mdl-cell--12-col mdl-cell--12-col-phone center">
+		<div class="center-text">
+			<h2 class="">ScrumMaster Certified</h2>
+			<p class="">
+				I recently decided to better myself and my development practices by getting ScrumMaster
+				Certified <a href="https://www.scrumalliance.org/get-certified/practitioners/csm-certification">(CSM)</a>
+				by <a href="https://www.scrumalliance.org/" target="_blank">ScrumAlliance</a>.
+			</p>
+		</div>
+	</div>
+
+	<!-- * COL -->
+	<div data-rellax data-rellax-container data-rellax-speed="3" class="section section-padding rellax mdl-cell mdl-cell--5-col mdl-cell--12-col-phone center">
+		<div class="center-text">
 			<a href="http://bcert.me/sbyourhga" target="_blank">
 				<img src="../assets/media/seal-csm.png" class="csm-seal float-left" alt="CSM Seal (click to see the certificate)"
 				 width="250" height="250">
 			</a>
 		</div>
 	</div>
-</div>
-
-<div data-rellax-speed="1" class="section section-padding rellax mdl-cell mdl-cell--5-col mdl-cell--12-col-phone center">
-	<div class="center-text">
-		<h2 class="">What is Scrum?</h2>
-		<p class="">
-			Scrum is a simple yet incredibly powerful set of principles and practices that helps teams deliver products in
-			short cycles,
-			enabling fast feedback, continual improvement, and rapid adaptation to change.
-		</p>
-		<p class="">
-			You can view my public certificate <a href="http://bcert.me/sbyourhga" target="_blank">here</a>.
-		</p>
+	<!-- * COL -->
+	<div data-rellax data-rellax-container data-rellax-speed="1" class="section section-padding rellax mdl-cell mdl-cell--7-col mdl-cell--12-col-phone center">
+		<div class="center-text">
+			<h2 class="">What is Scrum?</h2>
+			<p class="">
+				Scrum is a simple yet incredibly powerful set of principles and practices that helps teams deliver products in
+				short cycles,
+				enabling fast feedback, continual improvement, and rapid adaptation to change.
+			</p>
+			<p class="">
+				You can view my public certificate <a href="http://bcert.me/sbyourhga" target="_blank">here</a>.
+			</p>
+		</div>
 	</div>
 </div>

@@ -43,6 +43,9 @@ body, h1, h2, h3 {
 	color: $light-font-color !important;
 	font-family: Montserrat !important;
 }
+ul {
+	padding: 20px;
+}
 .background-image {
 	position: fixed;
 	left: 0;
@@ -75,11 +78,98 @@ body, h1, h2, h3 {
 	padding-top: 161px;
 	padding-bottom: 181px;
 }
+.small-divider {
+	padding-top: 120px;
+	padding-bottom: 100px;
+	min-height: 140px;
+	width: 100%;
+}
 .medium-divider {
 	padding-top: 161px;
 	padding-bottom: 181px;
 	min-height: 240px;
 	width: 100%;
+}
+.maylor-image {
+	border-radius: 50%;
+	opacity: 0.8;
+	-webkit-animation: halo-animation 10s infinite;
+
+}
+$color1: #401255;
+$color2: #3A3276;
+$color3: #2B4970;
+$color4: #28774F;
+$color5: #2B4970;
+$color6: #3A3276;
+$color7: #401255;
+$color8: #401255;
+@-webkit-keyframes halo-animation {
+	0% {
+		box-shadow: 0 0 35px 10px $color1;
+	}
+	13% {
+		box-shadow: 0 0 35px 10px $color2;
+	}
+	38% {
+		box-shadow: 0 0 35px 10px $color3;
+	}
+	50% {
+		box-shadow: 0 0 35px 10px $color4;
+	}
+	63% {
+		box-shadow: 0 0 35px 10px $color5;
+	}
+	75% {
+		box-shadow: 0 0 35px 10px $color6;
+	}
+	88% {
+		box-shadow: 0 0 35px 10px $color7;
+	}
+	100% {
+		box-shadow: 0 0 35px 10px $color8;
+	}
+}
+.maylor-image.animated {
+	-webkit-animation: filter-animation 10s infinite;
+}
+@-webkit-keyframes filter-animation {
+	0% {
+	  -webkit-filter: sepia(0) saturate(2);
+	}
+	
+	50% {
+	  -webkit-filter: sepia(1) saturate(8);
+	}
+	
+	100% {
+	  -webkit-filter: sepia(0) saturate(2);
+	}
+}
+.sunset {
+	background-image: url('/assets/media/sunset.jpg') !important;
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+	width:100%;
+}
+.shine {
+	background-image: url('/assets/media/mural3.jpg') !important;
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+	width:100%;
+}
+.tree {
+	background-image: url('/assets/media/tree.jpg') !important;
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+	width:100%;
+}
+.bg-color-2 {
+	background-color: $header-color;
+	width:100%;
 }
 // MDL overrides
 .mdl-layout__content {
@@ -98,7 +188,7 @@ body, h1, h2, h3 {
 }
 a {
 	text-decoration: none;
-	color: $accent-color;
+	color: $accent2-color;
 }
 
 a:hover {
@@ -178,7 +268,7 @@ blockquote {
 
 // * Other
 i.fab{
-	font-size: 80px;
+	font-size: font-size(20)
 }
 .mdl-mega-footer__link-list li {
 	width: 20%;
@@ -198,9 +288,14 @@ i.fab{
 .push-down-more {
 	margin-top: 140px !important;
 }
-.no-point li {
-	list-style-type: none;
+
+.no-point {
+	text-align: center;
+	li {
+		list-style-type: none;	
+	}
 }
+
 .rounded-circle {
 	border-width: 10px;
 	border-style: groove;
