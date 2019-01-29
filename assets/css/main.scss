@@ -8,6 +8,7 @@
 $dark: #0F0922;
 $dark-font-color: #848383;
 $light-font-color: #dddddd;
+$white: #fff;
 $block-quote: #bbbbbb;
 $accent-color: #3ca2a2;
 $accent2-color: #ee6c4d;
@@ -40,12 +41,16 @@ body {
 	background: radial-gradient(circle, rgba(30,28,149,1) 40%, rgba(15,18,55,1) 100%);
 }
 body, h1, h2, h3 {
-	color: $light-font-color !important;
+	color: $white !important;
 	font-family: Montserrat !important;
 }
 ul {
 	padding: 20px;
 }
+.no-padding {
+	padding: 0px !important;
+}
+
 .background-image {
 	position: fixed;
 	left: 0;
@@ -67,7 +72,6 @@ ul {
 	position: relative;
 	overflow: hidden;
 	min-height: 110px;
-	margin: 0px;
 	padding: 0px;
 }
 .section-padding {
@@ -95,6 +99,11 @@ ul {
 	opacity: 0.8;
 	-webkit-animation: halo-animation 10s infinite;
 
+}
+.center-footer-items {
+	display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 $color1: #401255;
 $color2: #3A3276;
@@ -135,30 +144,120 @@ $color8: #401255;
 }
 @-webkit-keyframes filter-animation {
 	0% {
-	  -webkit-filter: sepia(0) saturate(2);
+		-webkit-filter: sepia(0) saturate(0);
+		box-shadow: 0 0 35px 10px $color1;
 	}
-	
+	13% {
+		-webkit-filter: sepia(1) saturate(1);
+		box-shadow: 0 0 35px 10px $color2;
+	}
+	38% {
+		-webkit-filter: sepia(1) saturate(2);
+		box-shadow: 0 0 35px 10px $color3;
+	}
 	50% {
-	  -webkit-filter: sepia(1) saturate(8);
+		-webkit-filter: sepia(2) saturate(3);
+		box-shadow: 0 0 35px 10px $color4;
 	}
-	
+	63% {
+		-webkit-filter: sepia(2) saturate(3);
+		box-shadow: 0 0 35px 10px $color5;
+	}
+	75% {
+		-webkit-filter: sepia(1) saturate(2);
+		box-shadow: 0 0 35px 10px $color6;
+	}
+	88% {
+		-webkit-filter: sepia(1) saturate(1);
+		box-shadow: 0 0 35px 10px $color7;
+	}
 	100% {
-	  -webkit-filter: sepia(0) saturate(2);
+		-webkit-filter: sepia(0) saturate(0);
+		box-shadow: 0 0 35px 10px $color8;
 	}
 }
+
+.sunset .blur {
+	background: inherit;
+	height: 100vh; 
+	width: 166.667%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(
+	  -10%,
+	  -30%
+	);
+	filter: blur(2px);
+	z-index: -1;
+}
+.tree .blur {
+	background: inherit;
+	height: 100vh; 
+	width: 166.667%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(
+	  -10%,
+	  -30%
+	);
+	filter: blur(2px);
+	z-index: -1;
+}
+.sunset .content {
+    background: inherit;
+    width: 70%;
+    height: 70%;
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.5);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.tree .content {
+    background: inherit;
+    width: 70%;
+    height: 75%;
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.5);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.sunset .text {
+	padding: 16px;
+	background: rgba(255, 255, 255, 0.3);
+	height: 100%;
+	box-sizing: border-box; 
+}
+.tree .text {
+	padding: 16px;
+	background: rgba(255, 255, 255, 0.3);
+	height: 100%;
+	box-sizing: border-box; 
+}
+
 .sunset {
 	background-image: url('/assets/media/sunset.jpg') !important;
 	background-repeat: no-repeat;
 	background-position: center; 
 	background-size: cover;
-	width:100%;
+	width: 100%;
+	height: 700px;
 }
+
 .shine {
 	background-image: url('/assets/media/mural3.jpg') !important;
 	background-repeat: no-repeat;
 	background-position: center; 
 	background-size: cover;
-	width:100%;
+	width: 100%;
+	height: 700px;
 }
 .tree {
 	background-image: url('/assets/media/tree.jpg') !important;
@@ -166,11 +265,14 @@ $color8: #401255;
 	background-position: center; 
 	background-size: cover;
 	width:100%;
+	height: 800px;
 }
 .bg-color-2 {
 	background-color: $header-color;
 	width:100%;
 }
+
+
 // MDL overrides
 .mdl-layout__content {
 	position: fixed;
@@ -361,6 +463,17 @@ ul.posts li {
 	footer ul li {
 		margin-right: 3% !important;
 		margin-left: 3% !important;
+	}
+	.sunset .content {
+		width: 90%;
+		height: 80%;
+	}
+	.tree .content {
+		width: 90%;
+		height: 90%;
+	}
+	.center-footer-items {
+		display: block;
 	}
 }
 @media screen and (max-width: 600px) {

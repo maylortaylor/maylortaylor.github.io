@@ -4,42 +4,43 @@ title: Home
 ---
 
 <!-- ***** Section -->
-<div class="mdl-grid mdl-grid--no-spacing">
-	<!-- * COL -->
-	<div data-rellax data-rellax-container data-rellax-speed="2" class="rellax section section-padding mdl-cell mdl-cell--8-col mdl-cell--12-col-phone">
-		<div class="center-text">
-			<h1 class="">
-				<strong>{{ site.data.profile.name }}</strong>
-			</h1>
+<div class="sunset">
+
+	<div id="main-area" class="content">
+
+		<div class="text">
+			<div class="center-text">
+				<h1 class="">
+					<strong>{{ site.data.profile.name }}</strong>
+				</h1>
+			</div>
+			<div class="center-text">
+				<img data-rellax id="profile-pic" src="../assets/media/matt-headshot-1.png" class="maylor-image float-left" alt="A face picture of Matt Taylor"
+				 width="250" height="250">
+			</div>
 		</div>
+
+		<div class="blur"></div>
 	</div>
 
-	<!-- * COL -->
-	<div data-rellax data-rellax-container data-rellax-speed="2" class="rellax center section section-padding mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
-		<div class="center-text">
-			<img data-rellax id="profile-pic" src="../assets/media/matt-headshot-1.png" class="maylor-image csm-seal float-left"
-			 alt="A face picture of Matt Taylor" width="250" height="250">
-		</div>
-	</div>
 </div>
 
 
 
+
 <!-- ***** Section -->
-<div id="about-me" class="mdl-grid mdl-grid--no-spacing">
+<div id="about-me" class="">
 
 	<!-- * COL -->
-	<div data-rellax data-rellax-container class="sunset">
-		<div data-rellax-speed="1" class="rellax section section-padding mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-			<div class="center-text">
-				<h2 class="">
-					<strong>{{ site.data.profile.title }} in {{ site.data.profile.location }}</strong>
-				</h2>
-			</div>
+	<div class="section section-padding mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+		<div class="center-text">
+			<h2 class="">
+				<strong>{{ site.data.profile.title }} in {{ site.data.profile.location }}</strong>
+			</h2>
 		</div>
 	</div>
 	<!-- * COL -->
-	<div data-rellax-speed="-1" class="section section-padding-more rellax mdl-cell mdl-cell--6-col mdl-cell--12-col-phone center">
+	<div class="center section section-padding rellax mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
 		<p class="center-text">
 			I have 6+ years of experience in a real world work environment.
 			I helped develop a SaaS start-up company for 4 years. The company grew
@@ -47,7 +48,7 @@ title: Home
 		</p>
 	</div>
 	<!-- * COL -->
-	<div data-rellax-speed="1" class="bg-color-2 section section-padding-more rellax mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+	<div class="bg-color-2 section section-padding-more">
 		<div class="no-point">
 			<h2 class="center-text">My Skills and Achievements</h2>
 			<ul>
@@ -63,13 +64,9 @@ title: Home
 			</ul>
 		</div>
 	</div>
-</div>
 
-
-<!-- ***** Section -->
-<div class="mdl-grid mdl-grid--no-spacing">
 	<!-- * COL -->
-	<div data-rellax-speed="-1" class="section section-padding-more rellax mdl-cell mdl-cell--6-col mdl-cell--12-col-phone center">
+	<div class="center section section-padding-more rellax mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
 		<p class="center-text">
 			I am very experienced in the Microsoft .NET environment, the AngularJS and Angular2+ front-end framework,
 			SQL and MySql relational databases, Mongo and CosmosDB non-relational databases, and Node JS server
@@ -77,39 +74,41 @@ title: Home
 			<a href="/about">Read more about my life...</a>
 		</p>
 	</div>
-	<!-- * COL -->
-	<div data-rellax data-rellax-container data-rellax-speed="3" class="tree section section-padding rellax mdl-cell mdl-cell--12-col mdl-cell--12-col-phone center">
-		<div class="center-text">
-			<h2 class="">ScrumMaster Certified</h2>
-			<p class="">
-				I recently decided to better myself and my development practices by getting ScrumMaster
-				Certified <a href="https://www.scrumalliance.org/get-certified/practitioners/csm-certification">(CSM)</a>
-				by <a href="https://www.scrumalliance.org/" target="_blank">ScrumAlliance</a>.
-			</p>
+</div>
+
+
+<!-- ***** Section -->
+<div class="tree">
+
+	<div id="scrum-area" class="content">
+		<div class="text">
+			<!-- * COL -->
+			<div class="center rellax mdl-cell mdl-cell--5-col mdl-cell--12-col-phone">
+				<div class="center-text">
+					<a href="http://bcert.me/sbyourhga" target="_blank">
+						<img src="../assets/media/seal-csm.png" class="csm-seal float-left" alt="CSM Seal (click to see the certificate)"
+						 width="250" height="250">
+					</a>
+				</div>
+			</div>
+			<!-- * COL -->
+			<div class="center rellax mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
+				<div class="center-text">
+					<h2 class="">ScrumMaster Certified</h2>
+					<p class="">
+						I recently decided to better myself and my development practices by getting ScrumMaster
+						Certified <a href="https://www.scrumalliance.org/get-certified/practitioners/csm-certification">(CSM)</a>
+						by <a href="https://www.scrumalliance.org/" target="_blank">ScrumAlliance</a>.
+					</p>
+					<p class="">
+						You can view my public certificate <a href="http://bcert.me/sbyourhga" target="_blank">here</a>.
+					</p>
+				</div>
+			</div>
+
 		</div>
+
+		<div class="blur"></div>
 	</div>
 
-	<!-- * COL -->
-	<div data-rellax data-rellax-container data-rellax-speed="3" class="section section-padding rellax mdl-cell mdl-cell--5-col mdl-cell--12-col-phone center">
-		<div class="center-text">
-			<a href="http://bcert.me/sbyourhga" target="_blank">
-				<img src="../assets/media/seal-csm.png" class="csm-seal float-left" alt="CSM Seal (click to see the certificate)"
-				 width="250" height="250">
-			</a>
-		</div>
-	</div>
-	<!-- * COL -->
-	<div data-rellax data-rellax-container data-rellax-speed="1" class="section section-padding rellax mdl-cell mdl-cell--7-col mdl-cell--12-col-phone center">
-		<div class="center-text">
-			<h2 class="">What is Scrum?</h2>
-			<p class="">
-				Scrum is a simple yet incredibly powerful set of principles and practices that helps teams deliver products in
-				short cycles,
-				enabling fast feedback, continual improvement, and rapid adaptation to change.
-			</p>
-			<p class="">
-				You can view my public certificate <a href="http://bcert.me/sbyourhga" target="_blank">here</a>.
-			</p>
-		</div>
-	</div>
 </div>
