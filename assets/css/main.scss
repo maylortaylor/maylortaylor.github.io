@@ -209,7 +209,7 @@ $color8: #401255;
 .sunset .content {
     background: inherit;
     width: 70%;
-    height: 70%;
+    height: 90%;
     border-radius: 8px;
     box-shadow: 0 0 32px rgba(0,0,0,0.5);
     position: relative;
@@ -461,13 +461,21 @@ ul.posts li {
 // * ---------------------------------------
 // * Smartphones (portrait and landscape) -----------
 @media only screen and (max-width: 360px) {
+	.content {
+		h1 strong {
+			font-size: 2.1rem !important;
+		}
+		h2 strong {
+			font-size: 1.4rem !important;
+		}
+	}
 	footer ul li {
 		margin-right: 3% !important;
 		margin-left: 3% !important;
 	}
 	.sunset .content {
 		width: 90%;
-		height: 80%;
+		height: 100%;
 	}
 	.tree .content {
 		width: 90%;

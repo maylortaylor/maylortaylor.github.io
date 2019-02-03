@@ -26,7 +26,7 @@
 			startDelay: 1000,
 			smartBackspace: true,
 			fadeOut: false,
-			loop: false
+			loop: true
 		}
 
 		var typed = new Typed(".typed-element", options);
