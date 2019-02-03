@@ -10,6 +10,26 @@
 			}
 		});
 		$("#about-me").scrollToMe();
+
+
+		var options = {
+			strings: [
+				"Web Designe",
+				"Web Develope",
+				"Front-end Framework Ninj",
+				".NetCore Hacke",
+				"Scrum Master",
+				"Senior Full Stack .NET Web Developer"
+			],
+			typeSpeed: 80,
+			backSpeed: 40,
+			startDelay: 1000,
+			smartBackspace: true,
+			fadeOut: false,
+			loop: false
+		}
+
+		var typed = new Typed(".typed-element", options);
 	});
 
 })();

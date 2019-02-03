@@ -32,6 +32,9 @@ To build the code, run:
 
         jekyll build
 
-[Font Awesome v5.3](https://fontawesome.com/icons?d=gallery&q=achi&m=free) was used for icons. Click the link to find more font icons.
+## Built With
 
-[Code Prettify](https://github.com/google/code-prettify) was used to for all `pre` and `code` tag styling.
+* [Font Awesome v5.3](https://fontawesome.com/icons?d=gallery&q=achi&m=free) - Icons
+* [Code Prettify](https://github.com/google/code-prettify) - For all `pre` & `code` HTML tags
+* [Typed.JS](https://mattboldt.com/typed.js/) - For that cool typing effect
+* [Material Design Lite](https://github.com/google/material-design-lite) - Material Design look and feel
