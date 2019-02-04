@@ -180,7 +180,7 @@ $color8: #401255;
 
 .sunset .blur {
 	background: inherit;
-	height: 100vh; 
+	height: 150%; 
 	width: 166.667%;
 	position: absolute;
 	left: 0;
@@ -194,7 +194,7 @@ $color8: #401255;
 }
 .tree .blur {
 	background: inherit;
-	height: 100vh; 
+	height: 150%; 
 	width: 166.667%;
 	position: absolute;
 	left: 0;
@@ -460,7 +460,7 @@ ul.posts li {
 // * Media
 // * ---------------------------------------
 // * Smartphones (portrait and landscape) -----------
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) {
 	.content {
 		h1 strong {
 			font-size: 2.1rem !important;
@@ -475,7 +475,7 @@ ul.posts li {
 	}
 	.sunset .content {
 		width: 90%;
-		height: 100%;
+		height: 90%;
 	}
 	.tree .content {
 		width: 90%;
