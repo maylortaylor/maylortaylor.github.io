@@ -51,6 +51,8 @@ ul {
 	padding: 0px !important;
 }
 
+
+
 .background-image {
 	position: fixed;
 	left: 0;
@@ -342,6 +344,9 @@ footer {
 	a:hover {
 		color: $light-font-color;
 		text-decoration: underline;
+	}
+	h3 {
+		line-height: 30px !important;
 	}
 }
 .foot {
