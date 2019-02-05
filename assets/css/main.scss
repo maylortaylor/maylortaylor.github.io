@@ -73,15 +73,18 @@ ul {
 	overflow: hidden;
 	min-height: 110px;
 	padding: 0px;
-	width: 100% !important;
+	// width: 100% !important;
 }
 .section-padding {
-	padding-top: 61px;
-	padding-bottom: 81px;
+	// padding-top: 61px;
+	// padding-bottom: 81px;
+	padding: 61px 50px 81px 50px;
 }
 .section-padding-more {
-	padding-top: 161px;
-	padding-bottom: 181px;
+	// padding-top: 161px;
+	// padding-bottom: 181px;
+	padding: 161px 50px 181px 50px;
+
 }
 .small-divider {
 	padding-top: 120px;
@@ -270,7 +273,6 @@ $color8: #401255;
 }
 .bg-color-2 {
 	background-color: $header-color;
-	width:100%;
 }
 
 
@@ -396,6 +398,17 @@ i.fab{
 	text-align: center;
 	li {
 		list-style-type: none;	
+	}
+	ul {
+		line-height: 40px;
+	}
+}
+.social-links {
+	li {
+		line-height: 40px;
+	}
+	i {
+		font-size: 50px;
 	}
 }
 
