@@ -373,7 +373,7 @@ blockquote {
 
 // * Other
 i.fab{
-	font-size: font-size(20)
+	font-size: font-size(20);
 }
 .mdl-mega-footer__link-list li {
 	width: 20%;
@@ -387,12 +387,7 @@ i.fab{
 .page-content {
 	margin: 0px;
 }
-.push-down {
-	margin-top: 70px !important;
-}
-.push-down-more {
-	margin-top: 140px !important;
-}
+
 
 .no-point {
 	text-align: center;
@@ -420,6 +415,9 @@ i.fab{
 }
 
 .post-container {
+	padding: 10px;
+}
+.post {
 	padding: 10px;
 }
 

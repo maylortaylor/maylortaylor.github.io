@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<h1 class="header">{{ page.title }}</h1>
+<h1 class="header mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">{{ page.title }}</h1>
 
-<div class="post-container">
+<div class="post-container mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
   {% include share.html %}
   <p class="post-container meta">{{ page.date | date_to_string }}</p>
 </div>
 
-<div class="post">
+<div class="post mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
   {{ content }}
 </div>

@@ -1,10 +1,19 @@
 // ******************************************************** // Share // ********************************************************
+.push-down {
+	padding-top: 5px !important;
+}
+.push-down-more {
+	padding-top: 10px;
+}
 .share-buttons {
 	background-color: $share-buttons-color;
 	position: relative;
 	height: 50px;
 	a {
 		color: $dark-font-color;
+	}
+	i {
+		font-size: 40px;
 	}
 }
 .share-buttons:after {
