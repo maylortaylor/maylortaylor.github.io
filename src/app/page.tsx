@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
 
           <p className="text-2xl md:text-3xl font-semibold text-[#263d42] mb-6">
-            Full-Stack Software Engineer | React | .NET | Java
+            Full-Stack Software Engineer | React | AI workflows | Java
           </p>
 
           <div className="mb-8">
