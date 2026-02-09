@@ -14,7 +14,7 @@ export default function CVPage() {
 
       <div className="mb-8 text-center">
         <a
-          href="/resume.pdf"
+          href="/Resume_2026.pdf"
           download
           className="inline-flex items-center gap-2 bg-[#80ced7] text-[#263d42] px-8 py-3 rounded-lg font-semibold hover:bg-[#5eb5bf] transition-colors"
         >
@@ -25,7 +25,7 @@ export default function CVPage() {
 
       <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg" style={{ height: "800px" }}>
         <embed
-          src="/resume.pdf"
+          src="/Resume_2026.pdf"
           type="application/pdf"
           width="100%"
           height="100%"
@@ -36,7 +36,7 @@ export default function CVPage() {
         <p className="text-gray-700">
           If the PDF doesn't display properly in your browser, you can{" "}
           <a
-            href="/resume.pdf"
+            href="/Resume_2026.pdf"
             download
             className="text-[#80ced7] hover:text-[#5eb5bf] font-semibold"
           >

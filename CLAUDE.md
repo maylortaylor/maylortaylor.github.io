@@ -228,7 +228,7 @@ src/
 
 public/
 ├── images/                      # Image assets
-├── resume.pdf                   # Resume PDF
+├── Resume_2026.pdf              # Resume PDF
 ├── secplusstudy/               # Embedded SecPlus Study SPA (static)
 └── .nojekyll                   # GitHub Pages marker
 ```

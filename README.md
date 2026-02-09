@@ -79,7 +79,7 @@ src/
 
 public/
 ├── images/                 # Image assets
-├── resume.pdf              # Resume file
+├── Resume_2026.pdf         # Resume file
 └── .nojekyll               # GitHub Pages marker
 ```
 
