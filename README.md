@@ -1,36 +1,196 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Maylor Taylor Portfolio - Next.js 15
 
-## Getting Started
+A modern portfolio website built with Next.js 15, Tailwind CSS, and shadcn/ui. Migrated from Jekyll static site generator to a performant Next.js application.
 
-First, run the development server:
+## Features
+
+- ✨ Modern, responsive design with custom color palette
+- 📝 Blog system with Markdown support and syntax highlighting
+- 🏷️ Tag-based blog filtering
+- 🎬 Animated components (typed text, parallax scrolling, timeline)
+- 📱 Mobile-first responsive design
+- 📊 Static site generation (SSG) for optimal performance
+- 🧠 Embedded SecPlus Study SPA at `/secplusstudy/`
+- 🚀 Deployed to GitHub Pages
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Markdown**: Gray Matter, Remark, Rehype
+- **Syntax Highlighting**: Rehype Prism Plus
+- **Icons**: Lucide React
+- **Hosting**: GitHub Pages (static export)
+
+## Development
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Setup
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Visit http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Build static site
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Output goes to `out/` directory
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                     # Next.js app router pages
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Homepage
+│   ├── about/              # About/Timeline page
+│   ├── blog/               # Blog pages
+│   ├── cv/                 # Resume/CV page
+│   ├── tags/               # Tag pages
+│   └── globals.css         # Global styles
+├── components/             # React components
+│   ├── layout/             # Header, Footer
+│   ├── home/               # Homepage components
+│   ├── blog/               # Blog components
+│   └── about/              # About page components
+├── lib/                    # Utility functions
+│   ├── posts.ts            # Blog post utilities
+│   ├── markdown.ts         # Markdown processing
+│   └── utils.ts            # General utilities
+├── types/                  # TypeScript types
+│   └── blog.ts             # Blog-related types
+└── content/                # Content files
+    ├── posts/              # Markdown blog posts
+    └── profile.json        # Profile data
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+public/
+├── images/                 # Image assets
+├── resume.pdf              # Resume file
+└── .nojekyll               # GitHub Pages marker
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Color Palette
 
-## Deploy on Vercel
+- **Primary**: #ccdbdc (light grayish blue)
+- **Secondary**: #80ced7 (light cyan)
+- **Accent**: #63c7b2 (medium aquamarine)
+- **Accent 2**: #8e6c88 (mauve/purple)
+- **Dark**: #263d42 (dark slate)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Blog Posts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Blog posts are stored in `src/content/posts/` as Markdown files with YAML frontmatter:
+
+```markdown
+---
+layout: post
+title: "Post Title"
+description: "Short description"
+date: 2024-02-09
+tags: tag1 tag2
+share: true
+---
+
+# Content...
+```
+
+URL format is preserved from Jekyll: `/blog/{year}/{month}/{day}/{slug}/`
+
+### Supported Frontmatter Fields
+
+- `title` (required): Post title
+- `description`: Short post description
+- `date`: Publication date (YYYY-MM-DD)
+- `tags`: Space or comma-separated tag list
+- `share`: Enable social sharing buttons (optional)
+
+## Static Export
+
+The site is configured for static export to work with GitHub Pages:
+
+```javascript
+// next.config.ts
+output: 'export'
+images: { unoptimized: true }
+trailingSlash: true
+```
+
+This generates static HTML files in the `out/` directory, which are served directly by GitHub Pages.
+
+## Deployment
+
+### GitHub Pages Setup
+
+1. Push to `master` or `main` branch
+2. GitHub Actions workflow automatically builds and deploys
+3. Site is served from `https://maylortaylor.github.io`
+
+### Manual Deployment
+
+```bash
+# Build the site
+npm run build
+
+# The `out/` directory can be deployed to any static host
+```
+
+## URL Preservation
+
+All blog post URLs are preserved from the Jekyll site:
+
+- `/blog/2018/08/20/maylortaylor-site-launched`
+- `/blog/2018/08/22/into-to-the-blog`
+- `/blog/2018/08/27/const-vs-readonly`
+- etc.
+
+Tag pages are also preserved:
+- `/tags/c-sharp`
+- `/tags/general-development`
+
+## SecPlus Study SPA Integration
+
+The SecPlus Study single-page application is embedded at `/secplusstudy/` and includes:
+- `/secplusstudy/` - Main study page
+- `/secplusstudy/study/all` - All questions
+- `/secplusstudy/study/1`, `/study/2`, etc. - Questions by domain
+- `/secplusstudy/profile/` - Profile page
+- `/secplusstudy/reference/` - Reference materials
+
+The SPA files are served as static content from `public/secplusstudy/` and maintain full functionality when deployed.
+
+## Performance Optimizations
+
+- ✅ Static site generation (zero runtime overhead)
+- ✅ Image optimization with Next.js Image component
+- ✅ Tailwind CSS purging (minimal CSS bundle)
+- ✅ Code splitting and lazy loading
+- ✅ SEO meta tags and Open Graph
+
+## Browser Support
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Mobile browsers (iOS Safari 14+, Chrome for Android)
+
+## License
+
+Personal portfolio website. All content rights reserved.
+
+## Author
+
+Matt Maylor Taylor - Full Stack Web Developer
