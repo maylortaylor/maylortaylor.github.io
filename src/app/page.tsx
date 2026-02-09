@@ -15,7 +15,7 @@ export default function Home() {
           </h1>
 
           <p className="text-2xl md:text-3xl font-semibold text-[#263d42] mb-6">
-            Software Engineer III | Cloud Architecture | DevOps
+            Full-Stack Software Engineer | React | .NET | Java
           </p>
 
           <div className="mb-8">
@@ -47,13 +47,13 @@ export default function Home() {
           <div className="bg-gradient-to-r from-[#80ced7] to-[#63c7b2] rounded-lg p-8 text-white">
             <h2 className="text-3xl font-bold mb-4">Polestar Defense</h2>
             <p className="text-lg mb-4 leading-relaxed">
-              As <strong>Software Engineer III</strong>, I architect and deploy mission-critical systems utilizing modern cloud infrastructure and distributed computing paradigms. I lead technical initiatives spanning full-stack development, DevOps automation, and infrastructure-as-code implementations. I establish best practices for CI/CD pipelines and implement comprehensive monitoring and observability solutions for high-availability systems.
+              As <strong>Software Engineer III</strong>, I design and build full-stack applications for mission-critical systems. I lead technical initiatives spanning frontend architecture with React, backend development with .NET and Java, and database optimization. I architect scalable solutions, mentor junior developers, and establish engineering best practices across teams.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">Cloud Architecture</span>
-              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">DevOps</span>
-              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">CI/CD</span>
-              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">Infrastructure-as-Code</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">React</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">.NET Core</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">Java</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">API Design</span>
             </div>
           </div>
         </div>
@@ -67,58 +67,86 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Architecture & Design */}
+            {/* Frontend Development */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
               <div className="flex items-center gap-3 mb-4">
-                <Code2 size={28} className="text-[#80ced7]" />
+                <Code2 size={28} className="text-[#63c7b2]" />
                 <h3 className="text-xl font-bold text-[#263d42]">
-                  Architecture & Design
+                  Frontend Development
                 </h3>
               </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#80ced7] font-bold">•</span>
-                  Microservices architecture and distributed systems
+                  <span className="text-[#63c7b2] font-bold">•</span>
+                  React and modern component architecture
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#80ced7] font-bold">•</span>
-                  RESTful API design and documentation
+                  <span className="text-[#63c7b2] font-bold">•</span>
+                  TypeScript, JavaScript, HTML5, CSS/LESS
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#80ced7] font-bold">•</span>
-                  Database optimization and query performance tuning
+                  <span className="text-[#63c7b2] font-bold">•</span>
+                  Next.js, responsive design, state management
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#80ced7] font-bold">•</span>
-                  Design patterns: Repository, Dependency Injection, Observer
+                  <span className="text-[#63c7b2] font-bold">•</span>
+                  WCAG compliance and web accessibility standards
                 </li>
               </ul>
             </div>
 
-            {/* Cloud & DevOps */}
+            {/* Backend Development */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
               <div className="flex items-center gap-3 mb-4">
-                <Zap size={28} className="text-[#63c7b2]" />
+                <Code2 size={28} className="text-[#80ced7]" />
                 <h3 className="text-xl font-bold text-[#263d42]">
-                  Cloud & DevOps
+                  Backend Development
                 </h3>
               </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#63c7b2] font-bold">•</span>
-                  CI/CD pipeline design and implementation
+                  <span className="text-[#80ced7] font-bold">•</span>
+                  C#, .NET Core, and Microsoft .NET ecosystem
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#63c7b2] font-bold">•</span>
-                  Infrastructure-as-Code and containerization
+                  <span className="text-[#80ced7] font-bold">•</span>
+                  Java backend development and microservices
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#63c7b2] font-bold">•</span>
-                  Cloud platform management and optimization
+                  <span className="text-[#80ced7] font-bold">•</span>
+                  RESTful API design and implementation
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#63c7b2] font-bold">•</span>
-                  Monitoring, logging, and observability solutions
+                  <span className="text-[#80ced7] font-bold">•</span>
+                  Design patterns: Repository, Dependency Injection, MVC
+                </li>
+              </ul>
+            </div>
+
+            {/* Database & Architecture */}
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <Zap size={28} className="text-[#ccdbdc]" />
+                <h3 className="text-xl font-bold text-[#263d42]">
+                  Database & Architecture
+                </h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  SQL optimization and query performance tuning
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  SQL Server, MySQL, PostgreSQL, NoSQL databases
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  Scalable system architecture and design
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  Data modeling and schema optimization
                 </li>
               </ul>
             </div>
@@ -134,47 +162,19 @@ export default function Home() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-[#8e6c88] font-bold">•</span>
-                  Threat landscape assessment and vulnerability management
+                  Threat assessment and vulnerability management
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#8e6c88] font-bold">•</span>
-                  Access control and identity management
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#8e6c88] font-bold">•</span>
-                  Compliance frameworks and risk assessment
+                  Access control and secure authentication patterns
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#8e6c88] font-bold">•</span>
                   CompTIA Security+ certified expertise
                 </li>
-              </ul>
-            </div>
-
-            {/* Full-Stack Development */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-              <div className="flex items-center gap-3 mb-4">
-                <Code2 size={28} className="text-[#ccdbdc]" />
-                <h3 className="text-xl font-bold text-[#263d42]">
-                  Full-Stack Development
-                </h3>
-              </div>
-              <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#ccdbdc] font-bold">•</span>
-                  Backend: C#/.NET Core, Java, Python, Node.js
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#ccdbdc] font-bold">•</span>
-                  Frontend: React, Next.js, TypeScript, modern CSS
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#ccdbdc] font-bold">•</span>
-                  Databases: SQL Server, MySQL, PostgreSQL, NoSQL
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#ccdbdc] font-bold">•</span>
-                  Web standards: HTML5, WCAG, REST, GraphQL
+                  <span className="text-[#8e6c88] font-bold">•</span>
+                  Secure coding practices and compliance
                 </li>
               </ul>
             </div>
