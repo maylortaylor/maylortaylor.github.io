@@ -14,6 +14,7 @@ const apps = [
     path: "/secplusstudy/",
     icon: "🧠",
     tags: ["Security+", "Study Tool", "CompTIA", "Certification"],
+    isExternal: true,
   },
 ];
 
@@ -37,6 +38,7 @@ export default function AppsPage() {
             path={app.path}
             icon={app.icon}
             tags={app.tags}
+            isExternal={app.isExternal}
           />
         ))}
       </div>
