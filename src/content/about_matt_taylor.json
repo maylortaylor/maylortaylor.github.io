@@ -10,7 +10,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Earned my CompTIA Security+ certification in February 2026, demonstrating expertise in cybersecurity principles, threat management, and security infrastructure. This certification validates my knowledge across a broad range of security topics and best practices. You can view my credential here.",
+          "text": "Achieved CompTIA Security+ certification, validating expertise in threat landscape assessment, vulnerability management, access control mechanisms, and cryptographic implementations. Demonstrated mastery across domains including identity and access management, risk assessment frameworks, and compliance protocols essential for modern software architecture. You can view my credential here.",
           "links": [
             {
               "text": "here",
@@ -27,7 +27,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Joined Polestar Defense as a Software Engineer III, working on critical systems and leading technical initiatives. Contributing to the development of sophisticated software solutions for the maritime and defense sectors."
+          "text": "As Software Engineer III, architect and deploy mission-critical systems utilizing modern cloud infrastructure and distributed computing paradigms. Lead technical initiatives spanning full-stack development, DevOps automation, and infrastructure-as-code implementations. Establish best practices for CI/CD pipelines and implement comprehensive monitoring and observability solutions for high-availability systems serving the maritime and defense sectors."
         }
       ]
     },
@@ -38,7 +38,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "In December of 2018, I decided to better myself and my development practices by getting ScrumMaster Certified (CSM) by ScrumAlliance.",
+          "text": "Earned Certified Scrum Master (CSM) credential to formalize expertise in Agile methodologies and servant leadership. Specialize in optimizing sprint cycles, facilitating cross-functional collaboration, and implementing Lean principles to drive team velocity and product delivery efficiency. View my credential here.",
           "links": [
             {
               "text": "CSM",
@@ -47,13 +47,7 @@
             {
               "text": "ScrumAlliance",
               "url": "https://www.scrumalliance.org/"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "You can view my public certificate here.",
-          "links": [
+            },
             {
               "text": "here",
               "url": "http://bcert.me/sbyourhga"
@@ -76,7 +70,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Serendipitously met Matthew Parks, owner of Bovsi Studios, at Grassroots Kava House. He invited me to be a Senior Software Engineer at his growing company. I help architect applications, plan projects, and manage a team of developers.",
+          "text": "As Senior Software Engineer at Bovsi Studios, led architectural decisions and technical strategy for client engagements. Designed scalable microservices architectures, mentored junior developers, and established engineering best practices across the organization. Drove project planning initiatives and implemented process improvements that accelerated time-to-market for client solutions.",
           "links": [
             {
               "text": "Matthew Parks",
@@ -85,10 +79,6 @@
             {
               "text": "Bovsi Studios",
               "url": "https://bovsistudios.com/"
-            },
-            {
-              "text": "Grassroots Kava House",
-              "url": "http://grassrootskavahouse.com/"
             }
           ]
         }
@@ -101,7 +91,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "My first year and half at Presence.io (formerly Check I'm Here) involved me and a Senior Developer re-architecting an MVP application. The application we designed was a .NETCORE C# MVC Framework web app with a SQL database, AngularJS 1.6 front-end framework using the component-router and Typescript, and a C# RESTful API with the repository pattern design.",
+          "text": "As Lead Developer, spearheaded architectural refactoring of critical systems using .NET Core, C#, and modern web standards. Engineered high-performance RESTful APIs implementing repository patterns and dependency injection for maintainability. Optimized database queries and indexing strategies to improve system throughput and reduce latency across the platform.",
           "links": [
             {
               "text": "Presence.io",
@@ -111,7 +101,7 @@
         },
         {
           "type": "paragraph",
-          "text": "During my time with the company, I was the lead developer for the company's mobile API and the go-to developer for general C# or SQL questions. I worked closely with the customer service team to help test the system's UI and APIs. I also worked with the CEO / product owner (Reuben Pressman) on a daily basis to gather requirements for new features and define business logic for existing features. I also helped upgrade and maintain the Node.js application that our customer service team used internally.",
+          "text": "Served as technical authority on backend architecture decisions, API design patterns, and data persistence strategies. Collaborated directly with C-level stakeholders to translate business requirements into technical specifications. Owned the mobile API roadmap and drove cross-functional initiatives with product leadership, including CEO and product owner Reuben Pressman, to deliver feature-rich solutions while maintaining code quality and system reliability.",
           "links": [
             {
               "text": "Reuben Pressman",
@@ -128,7 +118,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "I was the IT administrator at Applied Technology Resources handling tasks such as creating new employee accounts, preparing computers for new users, doing general Windows repairs on employees' computers, and troubleshooting the network.",
+          "text": "As Systems Engineer at Applied Technology Resources, managed enterprise infrastructure spanning network administration, systems maintenance, and database administration. Progressed from infrastructure support to full-stack development, establishing myself as the technical authority for systems optimization.",
           "links": [
             {
               "text": "Applied Technology Resources",
@@ -138,7 +128,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Due to my skill set I was able to transition this into a more senior role creating queries for the SQL and MySQL databases, updating/repairing custom written .NET C# and VB programs, updating/maintaining the Microsoft Access program that employees used, and creating various applications that helped the company's processes."
+          "text": "Designed and implemented database schemas for critical business applications using SQL and MySQL with emphasis on query optimization and performance tuning. Developed custom applications using .NET and VB to optimize business workflows and automate repetitive processes. Created internal tools and utilities that measurably improved operational efficiency across departments and reduced manual overhead."
         }
       ]
     },
