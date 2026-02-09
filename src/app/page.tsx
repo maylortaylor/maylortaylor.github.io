@@ -51,7 +51,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">React</span>
-              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">.NET Core</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">AI workflows | Claude</span>
               <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">Java</span>
               <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">API Design</span>
             </div>
