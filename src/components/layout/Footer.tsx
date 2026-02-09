@@ -172,6 +172,9 @@ export default function Footer() {
           <Link href="/blog" className="text-gray-600 hover:text-[#80ced7] transition-colors">
             Blog
           </Link>
+          <Link href="/apps" className="text-gray-600 hover:text-[#80ced7] transition-colors">
+            Apps
+          </Link>
           <Link href="/tags" className="text-gray-600 hover:text-[#80ced7] transition-colors">
             Tags
           </Link>

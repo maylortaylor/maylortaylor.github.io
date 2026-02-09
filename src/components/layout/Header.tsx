@@ -40,6 +40,12 @@ export default function Header() {
               Blog
             </Link>
             <Link
+              href="/apps"
+              className="text-[#263d42] hover:text-[#80ced7] transition-colors"
+            >
+              Apps
+            </Link>
+            <Link
               href="/tags"
               className="text-[#263d42] hover:text-[#80ced7] transition-colors"
             >
@@ -80,6 +86,13 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
+            </Link>
+            <Link
+              href="/apps"
+              className="text-[#263d42] hover:text-[#80ced7] transition-colors block py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Apps
             </Link>
             <Link
               href="/tags"
