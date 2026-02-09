@@ -35,7 +35,7 @@ export default function Footer() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/matthew-taylor-8675309/"
+                  href="https://www.linkedin.com/in/maylortaylor/"
                   className="text-gray-600 hover:text-[#80ced7] transition-colors flex items-center gap-2"
                 >
                   <Linkedin size={16} />
@@ -62,6 +62,26 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
+                  href="http://linktree.com/stpetemusic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
+                >
+                  @StPeteMusic - my business to showcase bands in the St Petersburg, FL area
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linktree.com/suite_e_studios"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
+                >
+                  Suite E Studios - my business that is a studio space in St Petersburg, FL
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.kindafunny.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -72,32 +92,12 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.rocketleague.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
-                >
-                  Rocket League
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://www.factorio.com/blog/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-[#80ced7] transition-colors"
                 >
                   Factorio
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://medium.com/flutter-community"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
-                >
-                  Medium - #Flutter
                 </a>
               </li>
             </ul>
@@ -135,16 +135,6 @@ export default function Footer() {
                   className="text-gray-600 hover:text-[#80ced7] transition-colors"
                 >
                   Keller Williams
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://music.youtube.com/channel/UCtOUodyB33dhRELabN894qw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
-                >
-                  Aqueous
                 </a>
               </li>
               <li>
