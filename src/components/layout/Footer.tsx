@@ -56,49 +56,31 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Things I Like Section */}
+          {/* Things I Do Section */}
           <div>
-            <h3 className="text-lg font-bold text-[#263d42] mb-4">Things I Like</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-bold text-[#263d42] mb-4">Things I Do</h3>
+            <ul className="space-y-4">
               <li>
                 <a
                   href="http://linktree.com/stpetemusic"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
+                  className="text-gray-600 hover:text-[#80ced7] transition-colors font-semibold block"
                 >
-                  @StPeteMusic - my business to showcase bands in the St Petersburg, FL area
+                  @StPeteMusic
                 </a>
+                <span className="text-sm text-gray-500">Showcase bands in St Petersburg, FL</span>
               </li>
               <li>
                 <a
                   href="https://linktree.com/suite_e_studios"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
+                  className="text-gray-600 hover:text-[#80ced7] transition-colors font-semibold block"
                 >
-                  Suite E Studios - my business that is a studio space in St Petersburg, FL
+                  @Suite.E.Studios
                 </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.kindafunny.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
-                >
-                  Kinda Funny
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.factorio.com/blog/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-[#80ced7] transition-colors"
-                >
-                  Factorio
-                </a>
+                <span className="text-sm text-gray-500">Studio space in St Petersburg, FL</span>
               </li>
             </ul>
           </div>
