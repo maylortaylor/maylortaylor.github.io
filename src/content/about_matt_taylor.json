@@ -4,6 +4,28 @@
   "pageDescription": "Learn more about Matt Taylor's background, experience, and journey.",
   "timeline": [
     {
+      "year": "February 2026",
+      "title": "CompTIA Security+ Certified",
+      "isLeft": true,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Earned my CompTIA Security+ certification in February 2026, demonstrating expertise in cybersecurity principles, threat management, and security infrastructure. This certification validates my knowledge across a broad range of security topics and best practices."
+        }
+      ]
+    },
+    {
+      "year": "July 2023",
+      "title": "Software Engineer III at Polestar Defense",
+      "isLeft": false,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Joined Polestar Defense as a Software Engineer III, working on critical systems and leading technical initiatives. Contributing to the development of sophisticated software solutions for the maritime and defense sectors."
+        }
+      ]
+    },
+    {
       "year": "December 2018",
       "title": "Certified Scrum Master",
       "isLeft": true,
@@ -132,7 +154,7 @@
       ]
     },
     {
-      "year": "2008 - 2012",
+      "year": "2007 - 2011",
       "title": "University of Alabama",
       "isLeft": false,
       "content": [
@@ -149,7 +171,7 @@
       ]
     },
     {
-      "year": "Fall 2008",
+      "year": "Fall 2007",
       "title": "Moved to Tuscaloosa, Alabama",
       "isLeft": true,
       "content": [
