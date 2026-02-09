@@ -1,0 +1,169 @@
+{
+  "name": "Matt \"Maylor\" Taylor",
+  "pageTitle": "About Matt Maylor Taylor",
+  "pageDescription": "Learn more about Matt Taylor's background, experience, and journey.",
+  "timeline": [
+    {
+      "year": "December 2018",
+      "title": "Certified Scrum Master",
+      "isLeft": true,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In December of 2018, I decided to better myself and my development practices by getting ScrumMaster Certified (CSM) by ScrumAlliance.",
+          "links": [
+            {
+              "text": "CSM",
+              "url": "https://www.scrumalliance.org/get-certified/practitioners/csm-certification"
+            },
+            {
+              "text": "ScrumAlliance",
+              "url": "https://www.scrumalliance.org/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "You can view my public certificate here.",
+          "links": [
+            {
+              "text": "here",
+              "url": "http://bcert.me/sbyourhga"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/seal-csm.png",
+          "alt": "CSM Seal",
+          "width": 150,
+          "height": 150
+        }
+      ]
+    },
+    {
+      "year": "Summer 2018",
+      "title": "Senior Software Engineer at Bovsi Studios",
+      "isLeft": false,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Serendipitously met Matthew Parks, owner of Bovsi Studios, at Grassroots Kava House. He invited me to be a Senior Software Engineer at his growing company. I help architect applications, plan projects, and manage a team of developers.",
+          "links": [
+            {
+              "text": "Matthew Parks",
+              "url": "https://www.linkedin.com/in/matthew-parks-bovsi"
+            },
+            {
+              "text": "Bovsi Studios",
+              "url": "https://bovsistudios.com/"
+            },
+            {
+              "text": "Grassroots Kava House",
+              "url": "http://grassrootskavahouse.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2014 - 2018",
+      "title": "Lead Developer at Presence.io",
+      "isLeft": true,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "My first year and half at Presence.io (formerly Check I'm Here) involved me and a Senior Developer re-architecting an MVP application. The application we designed was a .NETCORE C# MVC Framework web app with a SQL database, AngularJS 1.6 front-end framework using the component-router and Typescript, and a C# RESTful API with the repository pattern design.",
+          "links": [
+            {
+              "text": "Presence.io",
+              "url": "http://presence.io"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "During my time with the company, I was the lead developer for the company's mobile API and the go-to developer for general C# or SQL questions. I worked closely with the customer service team to help test the system's UI and APIs. I also worked with the CEO / product owner (Reuben Pressman) on a daily basis to gather requirements for new features and define business logic for existing features. I also helped upgrade and maintain the Node.js application that our customer service team used internally.",
+          "links": [
+            {
+              "text": "Reuben Pressman",
+              "url": "https://www.linkedin.com/in/reubenpressman/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2012 - 2014",
+      "title": "IT Administrator at Applied Technology Resources",
+      "isLeft": false,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "I was the IT administrator at Applied Technology Resources handling tasks such as creating new employee accounts, preparing computers for new users, doing general Windows repairs on employees' computers, and troubleshooting the network.",
+          "links": [
+            {
+              "text": "Applied Technology Resources",
+              "url": "https://www.appliedtechres.com/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Due to my skill set I was able to transition this into a more senior role creating queries for the SQL and MySQL databases, updating/repairing custom written .NET C# and VB programs, updating/maintaining the Microsoft Access program that employees used, and creating various applications that helped the company's processes."
+        }
+      ]
+    },
+    {
+      "year": "Fall 2012",
+      "title": "Moved to St Petersburg, FL",
+      "isLeft": true,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "After college, I moved to St Petersburg, FL because one of my brothers lived nearby. He and his wife helped me get on my feet until I was able to live on my own in the greatest city in Florida."
+        },
+        {
+          "type": "iframe",
+          "src": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQao6aWPmwogR_4vUvANAzAQ&zoom=10&key=AIzaSyD4WASEzkM6m3h_2pd-1Uyk8mHLnbRuxNY",
+          "width": "100%",
+          "height": 300
+        }
+      ]
+    },
+    {
+      "year": "2008 - 2012",
+      "title": "University of Alabama",
+      "isLeft": false,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Graduated from The University of Alabama. I completed 1.5 years of computer programming classes before realizing the school's program was not geared towards marketable skills. I moved my credits to the College of Business and I finished my Marketing/Business Degree with a 3.5 GPA.",
+          "links": [
+            {
+              "text": "The University of Alabama",
+              "url": "https://en.wikipedia.org/wiki/University_of_Alabama"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "Fall 2008",
+      "title": "Moved to Tuscaloosa, Alabama",
+      "isLeft": true,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Moved to Tuscaloosa, Alabama for college at The University of Alabama. Roll Tide!"
+        },
+        {
+          "type": "iframe",
+          "src": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZ0DCkS6viIgRWCuJFv37q6w&zoom=5&key=AIzaSyD4WASEzkM6m3h_2pd-1Uyk8mHLnbRuxNY",
+          "width": "100%",
+          "height": 300
+        }
+      ]
+    }
+  ]
+}
