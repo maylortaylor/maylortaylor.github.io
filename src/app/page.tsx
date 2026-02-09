@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import TypedAnimation from "@/components/home/TypedAnimation";
 import ParallaxImage from "@/components/home/ParallaxImage";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Award, Code2, Shield, Zap } from "lucide-react";
 
 export default function Home() {
   return (
@@ -10,9 +10,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-[600px] bg-gradient-to-br from-[#e5eff0] via-[#a8dfe5] to-[#8dd9c7] flex items-center justify-center">
         <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#263d42] mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-[#263d42] mb-4">
             Matt Maylor Taylor
           </h1>
+
+          <p className="text-2xl md:text-3xl font-semibold text-[#263d42] mb-6">
+            Software Engineer III | Cloud Architecture | DevOps
+          </p>
 
           <div className="mb-8">
             <ParallaxImage
@@ -23,91 +27,246 @@ export default function Home() {
             />
           </div>
 
-          <div className="text-2xl md:text-3xl mb-4 text-[#263d42] font-semibold min-h-[2em]">
-            <TypedAnimation />
-          </div>
-
-          <p className="text-xl text-[#263d42] mb-2">in St Petersburg, FL</p>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center">
-            I have 6+ years of experience in real world work environments. I
-            helped develop a SaaS start-up company for 4 years. The company grew
-            from 5 employees and 12 clients to 35 employees and 100+ clients.
+          <p className="text-xl text-[#263d42] mb-8 max-w-2xl mx-auto">
+            Building mission-critical systems with modern cloud infrastructure, distributed computing, and DevOps automation. Based in St Petersburg, FL.
           </p>
+
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 bg-[#263d42] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3a5a61] transition-colors"
+          >
+            View Full Career Timeline
+            <ChevronRight size={20} />
+          </Link>
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Current Role Section */}
+      <section className="py-16 px-4 bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-[#80ced7] to-[#63c7b2] rounded-lg p-8 text-white">
+            <h2 className="text-3xl font-bold mb-4">Polestar Defense</h2>
+            <p className="text-lg mb-4 leading-relaxed">
+              As <strong>Software Engineer III</strong>, I architect and deploy mission-critical systems utilizing modern cloud infrastructure and distributed computing paradigms. I lead technical initiatives spanning full-stack development, DevOps automation, and infrastructure-as-code implementations. I establish best practices for CI/CD pipelines and implement comprehensive monitoring and observability solutions for high-availability systems.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">Cloud Architecture</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">DevOps</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">CI/CD</span>
+              <span className="bg-white text-[#263d42] px-3 py-1 rounded-full text-sm font-semibold">Infrastructure-as-Code</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Competencies */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-[#263d42] mb-12">
-            My Skills and Achievements
+            Core Competencies
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
+            {/* Architecture & Design */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-              <h3 className="text-xl font-bold text-[#263d42] mb-4 text-[#80ced7]">
-                Backend Development
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <Code2 size={28} className="text-[#80ced7]" />
+                <h3 className="text-xl font-bold text-[#263d42]">
+                  Architecture & Design
+                </h3>
+              </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-[#80ced7] font-bold">•</span>
-                  5+ years with SQL and MySQL databases
+                  Microservices architecture and distributed systems
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#80ced7] font-bold">•</span>
-                  5+ years with C#, Razor templates, and MVC framework
+                  RESTful API design and documentation
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#80ced7] font-bold">•</span>
-                  5+ years using .NET 4.6 and 4.7
+                  Database optimization and query performance tuning
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#80ced7] font-bold">•</span>
-                  2+ years with CosmosDb and .NET Core
+                  Design patterns: Repository, Dependency Injection, Observer
                 </li>
               </ul>
             </div>
 
+            {/* Cloud & DevOps */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-              <h3 className="text-xl font-bold text-[#263d42] mb-4 text-[#63c7b2]">
-                Frontend Development
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <Zap size={28} className="text-[#63c7b2]" />
+                <h3 className="text-xl font-bold text-[#263d42]">
+                  Cloud & DevOps
+                </h3>
+              </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-[#63c7b2] font-bold">•</span>
-                  4+ years of AngularJS development
+                  CI/CD pipeline design and implementation
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#63c7b2] font-bold">•</span>
-                  Expert in Javascript, Typescript, HTML, CSS/LESS
+                  Infrastructure-as-Code and containerization
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#63c7b2] font-bold">•</span>
-                  2+ years with Node, Express, and MEAN stack
+                  Cloud platform management and optimization
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#63c7b2] font-bold">•</span>
-                  1 year with PHP Laravel
+                  Monitoring, logging, and observability solutions
+                </li>
+              </ul>
+            </div>
+
+            {/* Security & Compliance */}
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <Shield size={28} className="text-[#8e6c88]" />
+                <h3 className="text-xl font-bold text-[#263d42]">
+                  Security & Compliance
+                </h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8e6c88] font-bold">•</span>
+                  Threat landscape assessment and vulnerability management
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8e6c88] font-bold">•</span>
+                  Access control and identity management
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8e6c88] font-bold">•</span>
+                  Compliance frameworks and risk assessment
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#8e6c88] font-bold">•</span>
+                  CompTIA Security+ certified expertise
+                </li>
+              </ul>
+            </div>
+
+            {/* Full-Stack Development */}
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <Code2 size={28} className="text-[#ccdbdc]" />
+                <h3 className="text-xl font-bold text-[#263d42]">
+                  Full-Stack Development
+                </h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  Backend: C#/.NET Core, Java, Python, Node.js
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  Frontend: React, Next.js, TypeScript, modern CSS
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  Databases: SQL Server, MySQL, PostgreSQL, NoSQL
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#ccdbdc] font-bold">•</span>
+                  Web standards: HTML5, WCAG, REST, GraphQL
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-8 bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-            <h3 className="text-xl font-bold text-[#263d42] mb-4">
-              Standards & Patterns
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Well versed on proper RESTful standards, HTML5 standards, WCAG
-              compliance standards, and C# coding patterns such as the "Visitor
-              Pattern" and the "Repository Pattern"
-            </p>
+      {/* Certifications Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-[#263d42] mb-12">
+            Professional Certifications
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Security+ */}
+            <div className="bg-gradient-to-br from-[#8e6c88] to-[#6f5469] rounded-lg p-8 text-white">
+              <div className="flex items-center gap-3 mb-4">
+                <Award size={32} />
+                <h3 className="text-2xl font-bold">CompTIA Security+</h3>
+              </div>
+              <p className="mb-4 leading-relaxed">
+                Achieved in February 2026. Demonstrates expertise in threat assessment, vulnerability management, access control, and cryptographic implementations essential for modern security infrastructure.
+              </p>
+              <a
+                href="https://www.credly.com/users/matt-taylor.8ec9f95b/edit#credly"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-[#8e6c88] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                View Credential
+                <ChevronRight size={18} />
+              </a>
+            </div>
+
+            {/* CSM */}
+            <div className="bg-gradient-to-br from-[#80ced7] to-[#5eb5bf] rounded-lg p-8 text-white">
+              <div className="flex items-center gap-3 mb-4">
+                <Award size={32} />
+                <h3 className="text-2xl font-bold">Certified Scrum Master</h3>
+              </div>
+              <p className="mb-4 leading-relaxed">
+                Earned December 2018. Specializes in optimizing sprint cycles, facilitating cross-functional collaboration, and implementing Lean principles to drive team velocity.
+              </p>
+              <a
+                href="http://bcert.me/sbyourhga"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-[#80ced7] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                View Certificate
+                <ChevronRight size={18} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership & Impact */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-[#263d42] mb-12">
+            Leadership & Impact
+          </h2>
+
+          <div className="space-y-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="text-xl font-bold text-[#263d42] mb-3">
+                Technical Leadership
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Serve as technical authority on architectural decisions, API design patterns, and system optimization. Mentor junior developers and establish best practices across teams. Drive process improvements and implement solutions that accelerate product delivery and improve system reliability.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="text-xl font-bold text-[#263d42] mb-3">
+                Cross-Functional Collaboration
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Collaborate directly with C-level stakeholders to translate business requirements into technical specifications. Work closely with product teams, customer service, and other departments to gather requirements and define business logic. Proven ability to bridge the gap between technical implementation and business objectives.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="text-xl font-bold text-[#263d42] mb-3">
+                System Optimization
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Expertise in optimizing database queries, improving system throughput, and reducing latency across platforms. Design and implement scalable solutions for high-availability systems serving mission-critical applications.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -115,60 +274,27 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 px-4 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            I am very experienced in the Microsoft .NET environment, the
-            AngularJS and Angular2+ front-end frameworks, SQL and MySql
-            relational databases, Mongo and CosmosDB non-relational databases,
-            and Node JS server applications.
+          <h2 className="text-3xl font-bold text-[#263d42] mb-6">
+            Ready to learn more?
+          </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto">
+            Explore my complete career timeline, professional accomplishments, and technical expertise.
           </p>
-          <Link
-            href="/about"
-            className="inline-flex items-center gap-2 bg-[#80ced7] text-[#263d42] px-6 py-3 rounded-lg font-semibold hover:bg-[#5eb5bf] transition-colors"
-          >
-            Read more about my life
-            <ChevronRight size={20} />
-          </Link>
-        </div>
-      </section>
-
-      {/* CSM Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div className="text-center">
-            <a
-              href="http://bcert.me/sbyourhga"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block hover:opacity-80 transition-opacity"
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/about"
+              className="inline-flex items-center justify-center gap-2 bg-[#80ced7] text-[#263d42] px-8 py-3 rounded-lg font-semibold hover:bg-[#5eb5bf] transition-colors"
             >
-              <Image
-                src="/images/seal-csm.png"
-                alt="CSM Seal (click to see the certificate)"
-                width={250}
-                height={250}
-                className="rounded-full shadow-lg"
-              />
-            </a>
-          </div>
-
-          <div>
-            <h2 className="text-3xl font-bold text-[#263d42] mb-4">
-              Certified Scrum Master
-            </h2>
-            <p className="text-gray-700 mb-4">
-              I completed the Certified Scrum Master (CSM) training and
-              certification, demonstrating my expertise in Agile methodologies
-              and Scrum practices.
-            </p>
-            <a
-              href="http://bcert.me/sbyourhga"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#63c7b2]2 text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#63c7b2]2-dark transition-colors"
-            >
-              View Certificate
+              Career Timeline
               <ChevronRight size={20} />
-            </a>
+            </Link>
+            <Link
+              href="/blog"
+              className="inline-flex items-center justify-center gap-2 bg-[#263d42] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3a5a61] transition-colors"
+            >
+              Technical Blog
+              <ChevronRight size={20} />
+            </Link>
           </div>
         </div>
       </section>
