@@ -10,7 +10,13 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Earned my CompTIA Security+ certification in February 2026, demonstrating expertise in cybersecurity principles, threat management, and security infrastructure. This certification validates my knowledge across a broad range of security topics and best practices."
+          "text": "Earned my CompTIA Security+ certification in February 2026, demonstrating expertise in cybersecurity principles, threat management, and security infrastructure. This certification validates my knowledge across a broad range of security topics and best practices. You can view my credential here.",
+          "links": [
+            {
+              "text": "here",
+              "url": "https://www.credly.com/users/matt-taylor.8ec9f95b/edit#credly"
+            }
+          ]
         }
       ]
     },
