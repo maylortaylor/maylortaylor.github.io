@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import TypedAnimation from "@/components/home/TypedAnimation";
 import ParallaxImage from "@/components/home/ParallaxImage";
 import { ChevronRight, Award, Code2, Shield, Zap } from "lucide-react";
 
@@ -11,7 +9,7 @@ export default function Home() {
       <section className="min-h-[600px] bg-gradient-to-br from-[#e5eff0] via-[#a8dfe5] to-[#8dd9c7] flex items-center justify-center">
         <div className="max-w-4xl mx-auto px-4 py-16 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-[#263d42] mb-4">
-            Matt Maylor Taylor
+            Matt "Maylor" Taylor
           </h1>
 
           <p className="text-2xl md:text-3xl font-semibold text-[#263d42] mb-6">
