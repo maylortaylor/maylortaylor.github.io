@@ -69,7 +69,7 @@ export default function Footer() {
                 >
                   @StPeteMusic
                 </a>
-                <span className="text-sm text-gray-500">Showcase bands in St Petersburg, FL</span>
+                <span className="text-sm text-gray-500">Showcases bands in St Petersburg, FL</span>
               </li>
               <li>
                 <a
@@ -146,9 +146,6 @@ export default function Footer() {
           </Link>
           <Link href="/apps" className="text-gray-600 hover:text-[#80ced7] transition-colors">
             Apps
-          </Link>
-          <Link href="/tags" className="text-gray-600 hover:text-[#80ced7] transition-colors">
-            Tags
           </Link>
         </div>
 

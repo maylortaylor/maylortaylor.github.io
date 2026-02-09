@@ -45,12 +45,6 @@ export default function Header() {
             >
               Apps
             </Link>
-            <Link
-              href="/tags"
-              className="text-[#263d42] hover:text-[#80ced7] transition-colors"
-            >
-              Tags
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,13 +87,6 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Apps
-            </Link>
-            <Link
-              href="/tags"
-              className="text-[#263d42] hover:text-[#80ced7] transition-colors block py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Tags
             </Link>
           </div>
         )}
